@@ -549,9 +549,9 @@ input[type="email"] {
                       <div class="multisteps-form__content">
                         <div class="row mt-3">
                           <div class="col-12 col-sm-6">
-                            <label>Company Account Number  <span style="color:#ff0000">*</span> </label>
+                            <label>Customer ID<span style="color:#ff0000">*</span> </label>
                             <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
-                            <span role="tooltip" id="a11y-tooltip">Please enter Company Account Numbery </span>
+                            <span role="tooltip" id="a11y-tooltip">Please enter Customer ID </span>
                           </div>
                           <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                             <label>Company Name</label>
@@ -575,15 +575,7 @@ input[type="email"] {
                               </div>
                             
                           </div>
-                          <div class="col-12 col-sm-6 mt-3 mt-sm-0">
-                            <label>Loan Purpose <span style="color:#ff0000">*</label>
-                            <textarea rows="1" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
-                          </div>
-                                   
-                        </div>
-                        <div class="row mt-3">
-                 
-                          <div class="col-12 col-sm-4">
+                          <div class="col-12 col-sm-6">
                             <label>Loan Tenor <span style="color:#ff0000">*</label>
                               <select class="form-control selectpicker" name="lga" id="lga">
                                 <option>--Select--</option>
@@ -592,7 +584,12 @@ input[type="email"] {
                                 <option value="Choice 3">Long term</option>
                               </select>
                           </div>
-                          <div class="col-12 col-sm-4">
+                                   
+                        </div>
+                        <div class="row mt-3">
+                 
+                        
+                          <div class="col-12 col-sm-6">
                             <label>Loan Type <span style="color:#ff0000">*</label>
                               <select class="form-control selectpicker" name="lga" id="lga">
                                 <option>--Select--</option>
@@ -601,7 +598,7 @@ input[type="email"] {
                                 <option value="Choice 3">On Lending</option>
                               </select>
                           </div>
-                          <div class="col-12 col-sm-4">
+                          <div class="col-12 col-sm-6">
                             <label>Repayment Plan <span style="color:#ff0000">*</label>
                               <select class="form-control selectpicker" name="lga" id="lga">
                                 <option>--Select--</option>
@@ -612,52 +609,58 @@ input[type="email"] {
                               </select>
                           </div>                                                 
                         </div>
-                        <h5 class="font-weight-bolder">Lead Contact Details</h5>
+                        <div class="row mt-3">
+                         
+                          <div class="col-12 col-sm-12 mt-3 mt-sm-0">
+                            <label>Loan Purpose <span style="color:#ff0000">*</label>
+                            <textarea rows="4" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
+                          </div>
+                                   
+                        </div>
+                      </fieldset>
+                      <br>
+                        <h5 class="font-weight-bolder">Chief Promoter Details</h5>
+                        <fieldset class="border p-2">
                         <div class="row mt-3">
                           <div class="col-12 col-sm-4">
                             <label>Surname <span style="color:#ff0000">*</label>
-                            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                            <input class="multisteps-form__input form-control" type="text"  disabled/>
                             <span role="tooltip" id="a11y-tooltip">Please enter Surname </span>
                           </div>
                           <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>First Name <span style="color:#ff0000">*</label>
-                            <input class="multisteps-form__input form-control" type="text" placeholder="eg. 42" />
+                            <input class="multisteps-form__input form-control" type="text" disabled />
                             <span role="tooltip" id="a11y-tooltip">Please enter First Name </span>
                           </div>
                           <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>Other Names</label>
-                            <input class="multisteps-form__input form-control" type="text" placeholder="eg. 42" />
+                            <input class="multisteps-form__input form-control" type="text" disabled />
                           </div>
   
                         </div>
                           <div class="row mt-3">
                           <div class="col-12 col-sm-4">
                             <label>Phone Number</label>
-                            <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                            <input class="multisteps-form__input form-control" type="number" disabled />
                           </div>
                           <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>Email Address</label>
-                            <input class="multisteps-form__input form-control" type="email" placeholder="eg. 42" />
+                            <input class="multisteps-form__input form-control" type="email" disabled />
                           </div>
                           <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>Position</label>
-                            <input class="multisteps-form__input form-control" type="text" placeholder="eg. 42" />
+                            <input class="multisteps-form__input form-control" type="text" disabled />
                           </div>
   
                         </div>
                <div class="row mt-3">
                           <div class="col-12 col-sm-4">
                             <label>BVN</label>
-                            <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                            <input class="multisteps-form__input form-control" type="number" disabled />
                           </div>
                           <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>Nationality <span style="color:#ff0000">*</label>
-                            <select class="form-control selectpicker" name="choices-category" id="choices-category2">
-                               <option>--Select--</option>
-                              <option value="Choice 1">Country 1</option>
-                              <option value="Choice 1">Country 2</option>
-                              <option value="Choice 1">Country 3</option>                             
-                            </select>
+                              <input class="multisteps-form__input form-control" type="number" disabled />
                           </div>
               <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label><small>Please upload Passport Photo  <span style="color:#ff0000">*</small></label>
@@ -805,7 +808,45 @@ input[type="email"] {
                     </div>
                     <!--single form panel-->
                     <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
-            <h3 class="font-weight-bolder header-font"> <strong>Existing Loan with other banks</strong></h3>
+                      <br>
+                      <h5 class="font-weight-bolder header-font"> <strong>Bank Accounts</strong></h5>
+                    <fieldset class="border p-2">
+
+                      <div class="multisteps-form__content">
+                        <div class="row mt-3">
+                           <div class="col-12 col-sm-4">
+                             <label>Name of Bank<span style="color:#ff0000">*</label>
+                               <select class="form-control selectpicker" name="lga" id="lga">
+                                 <option>--Select--</option>
+                                 <option value="Choice 1">Bank 1</option>
+                                 <option value="Choice 2">Bank 2</option>
+                                 <option value="Choice 3">Bank 3</option>
+                               </select>
+                           </div>
+                           <div class="col-12 col-sm-4">
+                             <label>Account Type <span style="color:#ff0000">*</label>
+                               <select class="form-control selectpicker" name="lga" id="lga">
+                                 <option>--Select--</option>
+                                 <option value="Choice 1">Savings</option>
+                                 <option value="Choice 2">Current</option>
+                               </select>
+                           </div>
+                              <div class="col-12 col-sm-4">
+                                <label>Account Number<span style="color:#ff0000">*</label>
+                                <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                              </div>						                    
+                        </div>					                    
+                      </div>                      
+                             
+                          <div class="button-row d-flex mt-4">
+                                     <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-add-bank-account-table" title="Prev">Add</button>
+                                   </div> 
+
+                      </fieldset>
+                      <br>
+                      <h5 class="font-weight-bolder header-font"> <strong>Existing Loan with other banks</strong></h5>
+                    <fieldset class="border p-2">
+
             <div class="multisteps-form__content">
              <div class="row mt-3">
                 <div class="col-12 col-sm-4">
@@ -858,9 +899,62 @@ input[type="email"] {
                   
                <div class="button-row d-flex mt-4">
                           <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-add-existing-loan-table" title="Prev">Add</button>
-                        </div>
-   
+                        </div>  
+               </fieldset> 
             <br/> 
+            <div  id="bank-account-table" style="display: none;">
+  
+              <fieldset class="border p-2" >
+                
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body px-0 pb-0">
+                        <h5 class="table-header">Bank Accounts</h5>
+                        <div class="table-responsive">
+                          <table class="table table-flush" id="products-list">
+                            <thead class="thead-light">
+                              <tr>
+                                <th>S/N</th>
+                                <th>Name of Bank</th>
+                                <th>Account Type</th>
+                                <th>Account Number</th>                           
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-sm">1</td>                              
+                                <td class="text-sm">Access Bank Plc</td>
+                                <td class="text-sm">Current</td>
+                                <td class="text-sm">0123456789</td> 
+                                <td class="text-sm">
+                                  <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                  <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                  <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-sm">2</td>                              
+                                <td class="text-sm">Titan Trust Bank </td>
+                                <td class="text-sm">Savings</td>
+                                <td class="text-sm">9876543210</td>  
+                                <td class="text-sm">
+                                  <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                  <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                  <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                </td>
+                              </tr>                       
+                            </tbody>
+                           
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset> 
+            </div>
             <div  id="existing-loan-table" style="display: none;">
   
               <fieldset class="border p-2" >
@@ -931,7 +1025,7 @@ input[type="email"] {
                             title="Next">Next</button>
                         </div>
                       </div>
-                    </div>
+                   
                     <!--single form panel-->
                     <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
             <h3 class="font-weight-bolder header-font"> <strong>Proposed Collateral Details</strong></h3>
@@ -952,7 +1046,7 @@ input[type="email"] {
                           </div>
                      </div>
                      <div class="row mt-3">
-                      <div class="col-12 col-sm-6">
+                      <div class="col-12 col-sm-4">
                         <label>Location<span style="color:#ff0000">*</label>
                           <select class="form-control selectpicker" name="lga" id="lga">
                             <option>--Select--</option>
@@ -961,8 +1055,12 @@ input[type="email"] {
                             <option value="Choice 3">Option 3</option>
                           </select>
                       </div>
-                      <div class="col-12 col-sm-6">
+                      <div class="col-12 col-sm-4">
                         <label>Value<span style="color:#ff0000">*</label>
+                        <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <label>Reference Number<span style="color:#ff0000">*</label>
                         <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
                       </div>
                  </div>
@@ -989,7 +1087,8 @@ input[type="email"] {
                                           <th>Collateral Type</th>
                                           <th>Description</th>
                                           <th>Location</th>
-                                          <th>Value</th>                            
+                                          <th>Value</th> 
+                                          <th>Reference Number</th>                            
                                           <th></th>
                                         </tr>
                                       </thead>
@@ -999,7 +1098,8 @@ input[type="email"] {
                                           <td class="text-sm">Fixed</td>
                                           <td class="text-sm">On Lending</td>
                                           <td class="text-sm">Lagos</td>
-                                          <td class="text-sm">#250,000</td>   
+                                          <td class="text-sm">#250,000</td>                                           
+                                          <td class="text-sm">456987321</td>     
                                           <td class="text-sm">
                                             <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                             <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -1011,7 +1111,8 @@ input[type="email"] {
                                           <td class="text-sm">Fixed</td>
                                           <td class="text-sm">Term Loan</td>
                                           <td class="text-sm">Abia</td>
-                                          <td class="text-sm">#35,000,000</td>  
+                                          <td class="text-sm">#35,000,000</td>                                           
+                                          <td class="text-sm">789564123</td>  
                                           <td class="text-sm">
                                             <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                             <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -1279,12 +1380,21 @@ input[type="email"] {
           })
         })
     </script>
+    <script>
+    var elementbank = document.getElementById("bank-account-table");
+        document.addEventListener("DOMContentLoaded", function(event) { 
+        document.getElementById("btn-add-bank-account-table").addEventListener('click', function(e) {
+            //your event handling code here       
+            elementbank.style.display = "block"
+        })
+      })
+  </script>
      <script>
-      var elementcorp = document.getElementById("existing-loan-table");
+      var elementexisting = document.getElementById("existing-loan-table");
           document.addEventListener("DOMContentLoaded", function(event) { 
           document.getElementById("btn-add-existing-loan-table").addEventListener('click', function(e) {
               //your event handling code here       
-              elementcorp.style.display = "block"
+              elementexisting.style.display = "block"
           })
         })
     </script>
