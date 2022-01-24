@@ -532,9 +532,10 @@ input[type="email"] {
               <div class="col-12 col-lg-8 mx-auto mt-4 mb-sm-5 mb-3">
                 <div class="multisteps-form__progress">
                   <button class="multisteps-form__progress-btn js-active" type="button" title="Product Info"><span>Loan Overview</span></button>
-                  <button class="multisteps-form__progress-btn" type="button" title="Media">Assets to be Financed</button>
-				          <button class="multisteps-form__progress-btn" type="button" title="Media2">Banking Relationship</button>
+                  <button class="multisteps-form__progress-btn" type="button" title="Media3">Loan Overview 2</button>
+				          <button class="multisteps-form__progress-btn" type="button" title="Media">Banking Relationship</button>
                   <button class="multisteps-form__progress-btn" type="button" title="Socials">Proposed Collateral Details</button>
+                  <button class="multisteps-form__progress-btn" type="button" title="Socials2">Documentation / Credit Management</button>
                 </div>
               </div>
             </div>
@@ -560,65 +561,6 @@ input[type="email"] {
                           
                         </div>
              
-                        <br />
-  
-                        <h5 class="font-weight-bolder">Loan Details</h5>
-            <fieldset class="border p-2">
-                <div class="row mt-3">
-                          <div class="col-12 col-sm-6">
-                            <label>Loan Amount <span style="color:#ff0000">*</label>
-                              <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text">#</div>
-                                </div>
-                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
-                              </div>
-                            
-                          </div>
-                          <div class="col-12 col-sm-6">
-                            <label>Loan Tenor <span style="color:#ff0000">*</label>
-                              <select class="form-control selectpicker" name="lga" id="lga">
-                                <option>--Select--</option>
-                                <option value="Choice 1">Short term</option>
-                                <option value="Choice 2">Medium term</option>
-                                <option value="Choice 3">Long term</option>
-                              </select>
-                          </div>
-                                   
-                        </div>
-                        <div class="row mt-3">
-                 
-                        
-                          <div class="col-12 col-sm-6">
-                            <label>Loan Type <span style="color:#ff0000">*</label>
-                              <select class="form-control selectpicker" name="lga" id="lga">
-                                <option>--Select--</option>
-                                <option value="Choice 1">Term loan</option>
-                                <option value="Choice 2">Working Capital</option>
-                                <option value="Choice 3">On Lending</option>
-                              </select>
-                          </div>
-                          <div class="col-12 col-sm-6">
-                            <label>Repayment Plan <span style="color:#ff0000">*</label>
-                              <select class="form-control selectpicker" name="lga" id="lga">
-                                <option>--Select--</option>
-                                <option value="Choice 1">Monthly</option>
-                                <option value="Choice 2">Quarterly</option>
-                                <option value="Choice 3">Semi-annual</option>
-                                <option value="Choice 4">Annual</option>
-                              </select>
-                          </div>                                                 
-                        </div>
-                        <div class="row mt-3">
-                         
-                          <div class="col-12 col-sm-12 mt-3 mt-sm-0">
-                            <label>Loan Purpose <span style="color:#ff0000">*</label>
-                            <textarea rows="4" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
-                          </div>
-                                   
-                        </div>
-                      </fieldset>
-                      <br>
                         <h5 class="font-weight-bolder">Chief Promoter Details</h5>
                         <fieldset class="border p-2">
                         <div class="row mt-3">
@@ -667,145 +609,530 @@ input[type="email"] {
                             <input class="multisteps-form__input form-control" type="file" placeholder="" />
                           </div>
                         </div>
-              </fieldset>
-              <br />
-                       
-              <div class="row">
-                          <div class="button-row d-flex mt-4 col-12">                            
-                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                              title="">Save</button>
-                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                title="Next">Next</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  <!--single form panel-->
-                    <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
-            <h3 class="font-weight-bolder header-font"> <strong>Assets to be Financed</strong></h3>
-                      <div class="multisteps-form__content">
-                  <div class="row mt-3">
-                          <div class="col-12 col-sm-4">
-                            <label>Asset Description<span style="color:#ff0000">*</label>
-                            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
-                          </div>
-                          <div class="col-12 col-sm-4">
-                            <label>Specification<span style="color:#ff0000">*</label>
-                            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
-                          </div>
-                          <div class="col-12 col-sm-4 mt-3 mt-sm-0">
-                            <label>Quantity</label>
-                            <input class="multisteps-form__input form-control" type="number" placeholder="eg. 42" />
-                          </div>                      
-                        </div>
-              <div class="row mt-3">
-                          <div class="col-12 col-sm-4">
-                            <label>Cost<span style="color:#ff0000">*</label>
-                            <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
-                          </div>
-                          <div class="col-12 col-sm-4 mt-3 mt-sm-0">
-                            <label>Supplier</label>
-                            <input class="multisteps-form__input form-control" type="text" placeholder="eg. 42" />
-                          </div> 
-                          <div class="col-12 col-sm-4 mt-3 mt-sm-0">
-                            <label><small>Please upload Invoice  <span style="color:#ff0000">*</small></label>
-                            <input class="multisteps-form__input form-control" type="file" placeholder="" />
-                          </div>                   
-                        </div> 
-                        <div class="button-row d-flex mt-4">
-                          <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-asset-description-table" title="Prev">Add</button>
-                        </div>
-                       
-              <br/>
-             <div class="row mt-3">
-                          
-              <div class="col-12 col-sm-4">                            
-                            <label>Is there any installation plan?</label>
-                            <select class="form-control selectpicker" name="choices-category11" id="select-litigation">
-                              <option>--Select--</option>
-                              <option value="Yes">Yes</option>
-                              <option value="No">No</option> 
-                            </select>
-               </div>
-               <div class="col-12 col-sm-4 mt-3 mt-sm-0">                  
-                 <label>Installation Cost (if not in invoice)</label>
-                 <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
-                </div>
-                <div class="col-12 col-sm-4 mt-3 mt-sm-0">                  
-                  <label>Total Cost</label>
-                  <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" disabled />
+                        </fieldset>
+                        <br />
+              
+              <h5 class="font-weight-bolder">Credit Facility Request</h5>
+              <fieldset class="border p-2">
+                <div class="row mt-3">                 
+                  <div class="col-12 col-sm-4">
+                     <label>Is this a first time request? <span style="color:#ff0000">*</label>
+                       <select class="form-control selectpicker" name="lga" id="lga">
+                         <option>--Select--</option>
+                         <option value="Choice 1">Yes</option>
+                         <option value="Choice 2">No</option>
+                       </select>
+                   </div>
+                   <div class="col-12 col-sm-4">
+                     <label>Number of times applied</label>
+                      <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
+                   </div> 
+                   <div class="col-12 col-sm-4">
+                    <label>Number of times loan was granted</label>
+                     <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
+                  </div>                                                 
                  </div>
-              </div>             
-              <br/> 
-              <div  id="asset-description-table" style="display: none;">
-    
-                <fieldset class="border p-2" >
-                  
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="card">
-                        <div class="card-body px-0 pb-0">
-                          <h5 class="table-header">Assets to be Financed</h5>
-                          <div class="table-responsive">
-                            <table class="table table-flush" id="products-list">
-                              <thead class="thead-light">
-                                <tr>
-                                  <th>S/N</th>
-                                  <th>Asset Description</th>
-                                  <th>Specification</th>
-                                  <th>Quantity</th>
-                                  <th>Cost</th>
-                                  <th>Supplier</th>                             
-                                  <th></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="text-sm">1</td>                              
-                                  <td class="text-sm">Power Machine</td>
-                                  <td class="text-sm">Big Size</td>
-                                  <td class="text-sm">2</td>
-                                  <td class="text-sm">#1,600,000</td>
-                                  <td class="text-sm">Chijioke Ofoma</td>   
-                                  <td class="text-sm">
-                                    <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                    <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                    <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="text-sm">2</td>                              
-                                  <td class="text-sm">Block Machine</td>
-                                  <td class="text-sm">Small Size</td>
-                                  <td class="text-sm">10</td>
-                                  <td class="text-sm">#3,200,000</td>
-                                  <td class="text-sm">Chijioke Ofoma</td>   
-                                  <td class="text-sm">
-                                    <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                    <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                    <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
-                                  </td>
-                                </tr>                    
-                              </tbody>
-                             
-                            </table>
+                  <div class="row mt-3">
+                            <div class="col-12 col-sm-6">
+                              <label>Loan Amount Requested (NGN)<span style="color:#ff0000">*</label>
+                                <div class="input-group mb-2">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">#</div>
+                                  </div>
+                                  <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                </div>
+                              
+                            </div>
+                            <div class="col-12 col-sm-6">
+                              <label>Loan Class<span style="color:#ff0000">*</label>
+                                <select class="form-control selectpicker" name="lga" id="lga">
+                                  <option>--Select--</option>
+                                  <option value="Choice 1">Short term</option>
+                                  <option value="Choice 2">Medium term</option>
+                                  <option value="Choice 3">Long term</option>
+                                </select>
+                            </div>
+                                     
+                          </div>
+                          <div class="row mt-3">                 
+                           <div class="col-12 col-sm-6">
+                              <label>Loan Type <span style="color:#ff0000">*</label>
+                                <select class="form-control selectpicker" name="lga" id="lga">
+                                  <option>--Select--</option>
+                                  <option value="Choice 1">Term loan</option>
+                                  <option value="Choice 2">Working Capital</option>
+                                  <option value="Choice 3">On Lending</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                              <label>Repayment Plan <span style="color:#ff0000">*</label>
+                                <select class="form-control selectpicker" name="lga" id="lga">
+                                  <option>--Select--</option>
+                                  <option value="Choice 1">Monthly</option>
+                                  <option value="Choice 2">Quarterly</option>                                  
+                                  <option value="Choice 3">Bi-Monthly</option>
+                                  <option value="Choice 4">Semi-annual</option>
+                                  <option value="Choice 5">Annual</option>
+                                </select>
+                            </div>                                                 
+                          </div>
+                          <div class="row mt-3">                           
+                            <div class="col-12 col-sm-12 mt-3 mt-sm-0">
+                              <label>Loan Purpose <span style="color:#ff0000">*</label>
+                              <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
+                            </div>
+                                     
+                          </div>
+                        </fieldset>
+                        <br>
+                        <h5 class="font-weight-bolder">Equity and Existing Assets</h5>
+                        <fieldset class="border p-2">
+                          <div class="row mt-3">
+                                  <div class="col-12 col-sm-6">
+                                    <fieldset class="border p-2">
+                                      <h6 class="font-weight-bolder">Equity</h6>
+                                      <div class="col-12 col-sm-12">
+                                        <label>Equity Contribution (NGN)<span style="color:#ff0000">*</label>
+                                        <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                                      </div>
+                                      <div class="col-12 col-sm-12 mt-3 mt-sm-0">
+                                        <label>Equity Description<span style="color:#ff0000">*</label>
+                                        <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder=""></textarea>
+                                      </div>
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-12 col-sm-6">
+                                    <fieldset class="border p-2">
+                                      <h6 class="font-weight-bolder">Existing Assets</h6> 
+                                      <div class="col-12 col-sm-12">
+                                        <label>Asset<span style="color:#ff0000">*</label>
+                                        <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                                      </div>
+                                      <div class="col-12 col-sm-12">
+                                        <label>Value (NGN)<span style="color:#ff0000">*</label>
+                                        <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                                      </div>
+                                      <div class="button-row d-flex mt-4">
+                                        <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-asset-description-table" title="Prev">Add</button>
+                                      </div>
+                                    </fieldset>
+                                  </div>                                                     
+                                </div>                         
+                          </fieldset>   
+                      <br/>
+                          <h5 class="font-weight-bolder">Assets to be Financed/Working Capital</h5>
+                          <fieldset class="border p-2">
+                            <div class="row mt-3">
+                              <div class="col-12 col-sm-4">
+                                <label>Type<span style="color:#ff0000">*</label>
+                                  <select class="form-control selectpicker" name="lga" id="lga">
+                                    <option>--Select--</option>
+                                    <option value="Choice 1">Asset</option>
+                                    <option value="Choice 2">Working Capital</option>                                                                  
+                                  </select>
+                              </div>  
+                              <div class="col-12 col-sm-8">
+                                <label>Description of items<span style="color:#ff0000">*</label>
+                                <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                              </div>                                                 
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                <label>Supplier</label>
+                                <input class="multisteps-form__input form-control" type="text" placeholder="eg. 42" />
+                              </div> 
+                              <div class="col-12 col-sm-4">
+                                <label>Supplier's Contact<span style="color:#ff0000">*</label>
+                                <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                              </div>                              
+                              <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                <label><small>Please upload Invoice  <span style="color:#ff0000">*</small></label>
+                                <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                              </div>                   
+                            </div> 
+                            <div class="row mt-3">
+                                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                      <label>Quantity</label>
+                                      <input class="multisteps-form__input form-control" type="number" placeholder="eg. 42" />
+                                    </div>  
+                                    <div class="col-12 col-sm-4">
+                                      <label>Unit Price (NGN)<span style="color:#ff0000">*</label>
+                                      <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <label>Total Price (NGN)<span style="color:#ff0000">*</label>
+                                      <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" disabled />
+                                    </div>
+                                                        
+                                  </div>
+                           
+                                  <div class="button-row d-flex mt-4">
+                                    <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-asset-description-table" title="Prev">Add</button>
+                                  </div>
+                            </fieldset>   
+                        <br/> 
+                        <div  id="asset-description-table" style="display: none;">              
+                          <fieldset class="border p-2" >
+                            
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="card">
+                                  <div class="card-body px-0 pb-0">
+                                    <h5 class="table-header">Assets to be Financed</h5>
+                                    <div class="table-responsive">
+                                      <table class="table table-flush" id="products-list">
+                                        <thead class="thead-light">
+                                          <tr>
+                                            <th>S/N</th>
+                                            <th>Asset Description</th>
+                                            <th>Specification</th>
+                                            <th>Quantity</th>
+                                            <th>Cost</th>
+                                            <th>Supplier</th>                             
+                                            <th></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="text-sm">1</td>                              
+                                            <td class="text-sm">Power Machine</td>
+                                            <td class="text-sm">Big Size</td>
+                                            <td class="text-sm">2</td>
+                                            <td class="text-sm">#1,600,000</td>
+                                            <td class="text-sm">Chijioke Ofoma</td>   
+                                            <td class="text-sm">
+                                              <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                              <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                              <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-sm">2</td>                              
+                                            <td class="text-sm">Block Machine</td>
+                                            <td class="text-sm">Small Size</td>
+                                            <td class="text-sm">10</td>
+                                            <td class="text-sm">#3,200,000</td>
+                                            <td class="text-sm">Chijioke Ofoma</td>   
+                                            <td class="text-sm">
+                                              <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                              <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                              <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                            </td>
+                                          </tr>                    
+                                        </tbody>
+                                       
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset> 
+                        </div> 
+                       
+                       <!-- <div class="row mt-3">                                    
+                        <div class="col-12 col-sm-4">                            
+                                      <label>Is there any installation plan?</label>
+                                      <select class="form-control selectpicker" name="choices-category11" id="select-litigation">
+                                        <option>--Select--</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option> 
+                                      </select>
+                         </div>
+                         <div class="col-12 col-sm-4 mt-3 mt-sm-0">                  
+                           <label>Installation Cost (if not in invoice)</label>
+                           <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                          </div>
+                          <div class="col-12 col-sm-4 mt-3 mt-sm-0">                  
+                            <label>Total Cost</label>
+                            <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" disabled />
+                           </div>
+                        </div>              -->
+                                                           
+                      <div class="row">
+                          <div class="button-row d-flex mt-4 col-12">                            
+                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="">Save</button>
+                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"   title="Next">Next</button>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </fieldset> 
-              </div> 
-              <div class="button-row d-flex mt-4">
-                          <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
-                            title="Prev">Prev</button>
-                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                              title="">Save</button>
-                          <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                            title="Next">Next</button>
+                     <!--single form panel-->
+                    <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                      <div class="multisteps-form__content">
+                        <h5 class="font-weight-bolder">Credit Terms</h5>
+                        <fieldset class="border p-2">
+                          <div class="row mt-3">
+                            <div class="col-12 col-sm-4">
+                              <label>Products<span style="color:#ff0000">*</label>
+                                <select class="form-control selectpicker" name="lga" id="lga">
+                                  <option>--Select--</option>
+                                  <option value="Choice 1">Abia State Funds</option>
+                                  <option value="Choice 2">Anambra State Funds</option>
+                                  <option value="Choice 3">Enugu State Funds</option>
+                                  <option value="Choice 4">Ogun State Funds</option> 
+                                  <option value="Choice 5">Cross Rivers State Funds</option>
+                                  <option value="Choice 6">Delta State Funds</option> 
+                                  <option value="Choice 7">Rivers State Funds</option>
+                                  <option value="Choice 8">Kwara State Funds</option> 
+                                  <option value="Choice 9">Ondo State Funds</option>
+                                  <option value="Choice 10">Osun State Funds</option> 
+                                  <option value="Choice 11">Oyo State Funds</option>
+                                  <option value="Choice 12">Benue State Funds</option>
+                                  <option value="Choice 13">Niger State Funds</option>
+                                  <option value="Choice 14">Bauchi State Funds</option> 
+                                  <option value="Choice 15">Gombe State Funds</option>
+                                  <option value="Choice 16">Kaduna State Funds</option> 
+                                  <option value="Choice 17">Kano State Funds</option>
+                                  <option value="Choice 18">Katsina State Funds</option> 
+                                  <option value="Choice 19">Sokoto State Funds</option>
+                                  <option value="Choice 20">BOI/Dangote Foundation Matching Fund</option>  
+                                  <option value="Choice 21">BOI/CBN Intervention Fund</option>
+                                  <option value="Choice 22">BOI-OYSG MSME Development Fund</option>                                                                 
+                                </select>
+                            </div> 
+                            <div class="col-12 col-sm-4">
+                              <label>Source of Fund<span style="color:#ff0000">*</label>
+                                <select class="form-control selectpicker" name="lga" id="lga">
+                                  <option>--Select--</option>
+                                  <option value="Choice 1">Asset</option>
+                                  <option value="Choice 2">Working Capital</option>                                                                  
+                                </select>
+                            </div>   
+                            <div class="col-12 col-sm-4">
+                              <label>Requested Amount<span style="color:#ff0000">*</label>
+                              <input class="multisteps-form__input form-control" type="text" placeholder="eg. 0123456" disabled/>
+                            </div>                                                 
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                              <label>Date completed application was received</label>
+                              <input class="multisteps-form__input form-control" type="date"  />
+                            </div> 
+                            <div class="col-12 col-sm-4">
+                              <label>Proposed purpose of credit<span style="color:#ff0000">*</label>
+                              <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                            </div>                              
+                            <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                              <label>Industrial Sector<span style="color:#ff0000">*</label>
+                                <select class="form-control selectpicker" name="lga" id="lga">
+                                  <option>--Select--</option>
+                                  <option value="Choice 1">Asset</option>
+                                  <option value="Choice 2">Working Capital</option>                                                                  
+                                </select>
+                            </div>                   
+                          </div>                          
+                          </fieldset>   
+                      <br/>
+                      <h5 class="font-weight-bolder">Loan Repayment Details</h5>
+                      <fieldset class="border p-2">
+                        <div class="row mt-3">
+                          <div class="col-12 col-sm-4">
+                            <label>Type<span style="color:#ff0000">*</label>
+                              <select class="form-control selectpicker" name="lga" id="lga">
+                                <option>--Select--</option>
+                                <option value="Choice 1">Asset</option>
+                                <option value="Choice 2">Working Capital</option> 
+                                <option value="Choice 3">Asset and Working Capital</option>                                                                    
+                              </select>
+                          </div>  
+                          <div class="col-12 col-sm-4">
+                            <label>Tenor (in months)<span style="color:#ff0000">*</label>
+                            <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                          </div> 
+                          <div class="col-12 col-sm-4">
+                            <label>Type<span style="color:#ff0000">*</label>
+                              <select class="form-control selectpicker" name="lga" id="lga">
+                                <option>--Select--</option>
+                                <option value="Choice 1">1 Month</option>
+                                <option value="Choice 2">2 Months</option> 
+                                <option value="Choice 3">3 Months</option> 
+                                <option value="Choice 4">4 Months</option>
+                                <option value="Choice 5">5 Months</option> 
+                                <option value="Choice 6">6 Months</option>
+                                <option value="Choice 7">7 Months</option>
+                                <option value="Choice 8">8 Months</option> 
+                                <option value="Choice 9">9 Months</option>
+                                <option value="Choice 10">10 Months</option>
+                                <option value="Choice 11">11 Months</option> 
+                                <option value="Choice 12">12 Months</option>
+                                <option value="Choice 13">13 Months</option>
+                                <option value="Choice 14">14 Months</option> 
+                                <option value="Choice 15">15 Months</option>
+                                <option value="Choice 16">16 Months</option>
+                                <option value="Choice 17">17 Months</option> 
+                                <option value="Choice 18">18 Months</option>
+                                <option value="Choice 19">19 Months</option>
+                                <option value="Choice 20">20 Months</option> 
+                                <option value="Choice 21">21 Months</option>
+                                <option value="Choice 22">22 Months</option>
+                                <option value="Choice 23">23 Months</option> 
+                                <option value="Choice 24">24 Months</option>                                                                   
+                              </select>
+                          </div>                                                  
+                        </div>                        
+                        <div class="row mt-3">
+                                <div class="col-12 col-sm-3">
+                                  <label>Interest Payment Mode<span style="color:#ff0000">*</label>
+                                    <select class="form-control selectpicker" name="lga" id="lga">
+                                      <option>--Select--</option>
+                                      <option value="Choice 1">Monthly</option>
+                                      <option value="Choice 2">Quarterly</option> 
+                                      <option value="Choice 3">Bi-Monthly</option> 
+                                      <option value="Choice 4">Semi-Annually</option>
+                                      <option value="Choice 5">Annually</option> 
+                                      <option value="Choice 6">None</option>                                                                    
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-3 mt-3 mt-sm-0">
+                                  <label>Interest Rate (%)<span style="color:#ff0000">*</label>
+                                  <input class="multisteps-form__input form-control" type="number" placeholder="eg. 42" />
+                                </div>  
+                                <div class="col-12 col-sm-3">
+                                  <label>Principal Repayment Mode<span style="color:#ff0000">*</label>
+                                    <select class="form-control selectpicker" name="lga" id="lga">
+                                      <option>--Select--</option>
+                                      <option value="Choice 1">Monthly</option>
+                                      <option value="Choice 2">Quarterly</option> 
+                                      <option value="Choice 3">Bi-Monthly</option> 
+                                      <option value="Choice 4">Semi-Annually</option>
+                                      <option value="Choice 5">Annually</option> 
+                                      <option value="Choice 6">None</option>                                                                   
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-3">
+                                  <label>Instalment Payments<span style="color:#ff0000">*</label>
+                                  <input class="multisteps-form__input form-control" type="text" placeholder="eg.10,000"  />
+                                </div>                                                    
+                              </div>                       
+                              <div class="button-row d-flex mt-4">
+                                <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-Loan-repayment-details-table" title="Prev">Add</button>
+                              </div>
+                        </fieldset>   
+                    <br/> 
+                    <div  id="Loan-repayment-details-table" style="display: none;">              
+                      <fieldset class="border p-2" >
+                        
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card">
+                              <div class="card-body px-0 pb-0">
+                                <h5 class="table-header">Assets to be Financed</h5>
+                                <div class="table-responsive">
+                                  <table class="table table-flush" id="products-list">
+                                    <thead class="thead-light">
+                                      <tr>
+                                        <th>S/N</th>
+                                        <th>Asset Description</th>
+                                        <th>Specification</th>
+                                        <th>Quantity</th>
+                                        <th>Cost</th>
+                                        <th>Supplier</th>                             
+                                        <th></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="text-sm">1</td>                              
+                                        <td class="text-sm">Power Machine</td>
+                                        <td class="text-sm">Big Size</td>
+                                        <td class="text-sm">2</td>
+                                        <td class="text-sm">#1,600,000</td>
+                                        <td class="text-sm">Chijioke Ofoma</td>   
+                                        <td class="text-sm">
+                                          <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                          <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                          <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-sm">2</td>                              
+                                        <td class="text-sm">Block Machine</td>
+                                        <td class="text-sm">Small Size</td>
+                                        <td class="text-sm">10</td>
+                                        <td class="text-sm">#3,200,000</td>
+                                        <td class="text-sm">Chijioke Ofoma</td>   
+                                        <td class="text-sm">
+                                          <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                          <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                          <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                        </td>
+                                      </tr>                    
+                                    </tbody>
+                                   
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </fieldset> 
+                    </div> 
+                      <br/>
+                      <h5 class="font-weight-bolder">Business Model</h5>
+                      <fieldset class="border p-2">
+                        <div class="row mt-3">                 
+                          <div class="col-12 col-sm-6">
+                            <label>Value Proposition<span style="color:#ff0000">*</label>
+                              <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
+                           </div>
+                           <div class="col-12 col-sm-6">
+                            <label>Target Market/Customer<span style="color:#ff0000">*</label>
+                              <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>                          
+                           </div>                                                                         
+                         </div>
+                         <div class="row mt-3">                 
+                          <div class="col-12 col-sm-6">
+                            <label>Enterprise Relevant Experience/Trainings<span style="color:#ff0000">*</label>
+                              <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
+                           </div>
+                           <div class="col-12 col-sm-6">
+                            <label>Social Impact - Employment Generation (Direct & Indirect)<span style="color:#ff0000">*</label>
+                              <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>                          
+                           </div>                                                                         
+                         </div>
+                       </fieldset>
+                       <br/>
+                      <h5 class="font-weight-bolder">Risk and Mitigants</h5>
+                      <fieldset class="border p-2">
+                        <div class="row mt-3">                 
+                          <div class="col-12 col-sm-6">
+                            <label>Market/Demand Risk<span style="color:#ff0000">*</label>
+                              <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
+                           </div>
+                           <div class="col-12 col-sm-6">
+                            <label>Supply Risk<span style="color:#ff0000">*</label>
+                              <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>                          
+                           </div>                                                                         
+                         </div>
+                         <div class="row mt-3">                 
+                          <div class="col-12 col-sm-4">
+                            <label>Production Risk<span style="color:#ff0000">*</label>
+                              <textarea rows="4" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
+                           </div>
+                           <div class="col-12 col-sm-4">
+                            <label>Foreign Exchange Risk<span style="color:#ff0000">*</label>
+                              <textarea rows="4" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>                          
+                           </div> 
+                           <div class="col-12 col-sm-4">
+                            <label>Major Competitors<span style="color:#ff0000">*</label>
+                              <textarea rows="4" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>                          
+                           </div>                                                                         
+                         </div>
+
+                       </fieldset>
+                                <br>
+                    
+                            <div class="button-row d-flex mt-4">
+                                <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
+                                  title="Prev">Prev</button>
+                                  <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
+                                    title="">Save</button>
+                                <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
+                                  title="Next">Next</button>
+                              </div>
+                            </div>
+                     </div>
                     <!--single form panel-->
                     <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
                       <br>
@@ -814,28 +1141,34 @@ input[type="email"] {
 
                       <div class="multisteps-form__content">
                         <div class="row mt-3">
-                           <div class="col-12 col-sm-4">
-                             <label>Name of Bank<span style="color:#ff0000">*</label>
-                               <select class="form-control selectpicker" name="lga" id="lga">
-                                 <option>--Select--</option>
-                                 <option value="Choice 1">Bank 1</option>
-                                 <option value="Choice 2">Bank 2</option>
-                                 <option value="Choice 3">Bank 3</option>
-                               </select>
-                           </div>
-                           <div class="col-12 col-sm-4">
-                             <label>Account Type <span style="color:#ff0000">*</label>
-                               <select class="form-control selectpicker" name="lga" id="lga">
-                                 <option>--Select--</option>
-                                 <option value="Choice 1">Savings</option>
-                                 <option value="Choice 2">Current</option>
-                               </select>
-                           </div>
-                              <div class="col-12 col-sm-4">
-                                <label>Account Number<span style="color:#ff0000">*</label>
-                                <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
-                              </div>						                    
-                        </div>					                    
+                          <div class="col-12 col-sm-6">
+                            <label>Name of Bank<span style="color:#ff0000">*</label>
+                              <select class="form-control selectpicker" name="lga" id="lga">
+                                <option>--Select--</option>
+                                <option value="Choice 1">Bank 1</option>
+                                <option value="Choice 2">Bank 2</option>
+                                <option value="Choice 3">Bank 3</option>
+                              </select>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <label>Account Type <span style="color:#ff0000">*</label>
+                              <select class="form-control selectpicker" name="lga" id="lga">
+                                <option>--Select--</option>
+                                <option value="Choice 1">Savings</option>
+                                <option value="Choice 2">Current</option>
+                              </select>
+                          </div>						                    
+                        </div>	
+                        <div class="row mt-3">                          
+                             <div class="col-12 col-sm-6">
+                               <label>Account Number<span style="color:#ff0000">*</label>
+                               <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                             </div>	
+                             <div class="col-12 col-sm-6">
+                              <label>BVN<span style="color:#ff0000">*</label>
+                              <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                            </div>						                    
+                       </div>				                    
                       </div>                      
                              
                           <div class="button-row d-flex mt-4">
@@ -862,9 +1195,9 @@ input[type="email"] {
                   <label>Loan Type <span style="color:#ff0000">*</label>
                     <select class="form-control selectpicker" name="lga" id="lga">
                       <option>--Select--</option>
-                      <option value="Choice 1">Term loan</option>
-                      <option value="Choice 2">Working Capital</option>
-                      <option value="Choice 3">On Lending</option>
+                      <option value="Choice 1">Short Term Loan</option>
+                      <option value="Choice 2">Medium Term Loan</option>
+                      <option value="Choice 3">Long Term Loan</option>
                     </select>
                 </div>
               <div class="col-12 col-sm-4">
@@ -879,6 +1212,10 @@ input[type="email"] {
                         </div>
                <div class="row mt-3">
                 <div class="col-12 col-sm-4">
+                  <label>Disbursement Date<span style="color:#ff0000">*</label>
+                  <input class="multisteps-form__input form-control" type="date" placeholder="eg. Off-White" />
+                </div>
+                <div class="col-12 col-sm-4">
                   <label>Outstanding Balance<span style="color:#ff0000">*</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
@@ -886,14 +1223,15 @@ input[type="email"] {
                       </div>
                       <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                     </div>
-                </div>
-                <div class="col-12 col-sm-4">
-                  <label>Disbursement Date<span style="color:#ff0000">*</label>
-                  <input class="multisteps-form__input form-control" type="date" placeholder="eg. Off-White" />
-                </div>	
+                </div>                	
               <div class="col-12 col-sm-4">
-                            <label>Maturity Date<span style="color:#ff0000">*</label>
-                            <input class="multisteps-form__input form-control" type="date" placeholder="eg. Off-White" />
+                            <label>Collateral Pledged<span style="color:#ff0000">*</label>
+                              <select class="form-control selectpicker" name="lga" id="lga">
+                                <option>--Select--</option>
+                                <option value="Choice 1">All Assets Debenture/Fixed and Floating Debenture</option>
+                                <option value="Choice 2">Bank Guarantee</option>
+                                <option value="Choice 3">Bill of Sale</option>
+                              </select>
                           </div>						                    
                         </div>
                   
@@ -1024,14 +1362,13 @@ input[type="email"] {
                           <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
                             title="Next">Next</button>
                         </div>
-                      </div>
-                   
+                      </div>                   
                     <!--single form panel-->
                     <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
             <h3 class="font-weight-bolder header-font"> <strong>Proposed Collateral Details</strong></h3>
                       <div class="multisteps-form__content">
                         <div class="row mt-3">
-                          <div class="col-12 col-sm-6">
+                          <div class="col-12 col-sm-4">
                             <label>Collateral Type<span style="color:#ff0000">*</label>
                               <select class="form-control selectpicker" name="lga" id="lga">
                                 <option>--Select--</option>
@@ -1040,14 +1377,23 @@ input[type="email"] {
                                 <option value="Choice 3">Option 3</option>
                               </select>
                           </div>
-                          <div class="col-12 col-sm-6">
-                            <label>Description<span style="color:#ff0000">*</label>
+                          <div class="col-12 col-sm-4">
+                            <label>Reference Number<span style="color:#ff0000">*</label>
                             <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                          </div>
+                          <div class="col-12 col-sm-4">
+                            <label>Guaranteeing Bank<span style="color:#ff0000">*</label>
+                              <select class="form-control selectpicker" name="lga" id="lga">
+                                <option>--Select--</option>
+                                <option value="Choice 1">Option 1</option>
+                                <option value="Choice 2">Option 2</option>
+                                <option value="Choice 3">Option 3</option>
+                              </select>
                           </div>
                      </div>
                      <div class="row mt-3">
                       <div class="col-12 col-sm-4">
-                        <label>Location<span style="color:#ff0000">*</label>
+                        <label>Name of Bank<span style="color:#ff0000">*</label>
                           <select class="form-control selectpicker" name="lga" id="lga">
                             <option>--Select--</option>
                             <option value="Choice 1">Option 1</option>
@@ -1056,15 +1402,67 @@ input[type="email"] {
                           </select>
                       </div>
                       <div class="col-12 col-sm-4">
-                        <label>Value<span style="color:#ff0000">*</label>
+                        <label>Account Number<span style="color:#ff0000">*</label>
                         <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
                       </div>
                       <div class="col-12 col-sm-4">
-                        <label>Reference Number<span style="color:#ff0000">*</label>
+                        <label>Deposited Amount (NGN)<span style="color:#ff0000">*</label>
                         <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
                       </div>
                  </div>
-                        
+                 <div class="row mt-3">
+                  <div class="col-12 col-sm-4">
+                    <label>Name of Guarantor<span style="color:#ff0000">*</label>
+                    <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <label>Net Worth (NGN)<span style="color:#ff0000">*</label>
+                    <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <label>Name of Organization<span style="color:#ff0000">*</label>
+                    <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                  </div>
+             </div>
+             <div class="row mt-3">
+              <div class="col-12 col-sm-4">
+                <label>Address<span style="color:#ff0000">*</label>
+                  <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
+              </div>
+              <div class="col-12 col-sm-4">
+                <label>Asset Location<span style="color:#ff0000">*</label>
+                  <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
+              </div>
+              <div class="col-12 col-sm-4">
+                <label>Asset Description<span style="color:#ff0000">*</label>
+                  <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
+              </div>
+         </div> 
+         <div class="row mt-3">
+          <div class="col-12 col-sm-4">
+            <label>Amount (NGN)<span style="color:#ff0000">*</label>
+            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+          </div>
+          <div class="col-12 col-sm-4">
+            <label>Forced Sale Value (NGN)<span style="color:#ff0000">*</label>
+            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+          </div>
+          <div class="col-12 col-sm-4">
+            <label>Open Market Value (NGN)<span style="color:#ff0000">*</label>
+            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+          </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-4">
+              <label>Valuation Date<span style="color:#ff0000">*</label>
+              <input class="multisteps-form__input form-control" type="text"  />
+            </div>
+            <div class="col-12 col-sm-8">
+              <label>Valuation Company<span style="color:#ff0000">*</label>
+              <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+            </div>
+            
+            </div>
                          <div class="button-row d-flex mt-4">
                                     <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-add-proposed-collateral-table" title="Prev">Add</button>
                                   </div>
@@ -1140,7 +1538,203 @@ input[type="email"] {
                         </div>
                       </div>
                     </div>
-                    
+                     <!--single form panel-->
+                     <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                      <!-- <h3 class="font-weight-bolder header-font"> <strong>Documentation / Credit Management</strong></h3> -->
+                      <br>
+                                <div class="multisteps-form__content">
+                                  <h5 class="font-weight-bolder">Credit Application Documents</h5>
+                                  <fieldset class="border p-2">
+                                  <div class="row mt-3">
+                                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                                      <label><small>Please upload Certificate of Incorporation/Registration <span style="color:#ff0000">*</small></label>
+                                      <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                                    </div>
+                                    <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                                      <label><small>Please upload Memorandum and Articles of Association  <span style="color:#ff0000">*</small></label>
+                                      <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                                    </div>
+                                  </div>
+                                    <div class="row mt-3">
+                                      <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                        <label><small>Please upload Form CAC-02<span style="color:#ff0000">*</small></label>
+                                        <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                                      </div>
+                                      <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                        <label><small>Please upload Form CAC-07<span style="color:#ff0000">*</small></label>
+                                        <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                                      </div>
+                                      <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                        <label><small>Please upload Shareholders CV<span style="color:#ff0000">*</small></label>
+                                        <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                                      </div>
+                                  </div>
+                                  <div class="row mt-3">
+                                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                      <label><small>Please upload Credit Search Report  <span style="color:#ff0000">*</small></label>
+                                      <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                                    </div>
+                                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                      <label><small>Please upload Politically Exposed Persons Search  <span style="color:#ff0000">*</small></label>
+                                      <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                                    </div>
+                                  </div>
+                                  </fieldset>
+                                  <br />
+                                  <h5 class="font-weight-bolder">Credit Management Team</h5>
+                                  <fieldset class="border p-2">
+                                  <div class="row mt-3">
+                                    <div class="col-12 col-sm-4">
+                                      <label>Project Officer <span style="color:#ff0000">*</label>
+                                      <input class="multisteps-form__input form-control" type="text"  disabled/>
+                                    </div>
+                                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                      <label>State Manager<span style="color:#ff0000">*</label>
+                                      <input class="multisteps-form__input form-control" type="text" disabled />
+                                    </div>
+                                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                      <label>Regional Head</label>
+                                      <input class="multisteps-form__input form-control" type="text" disabled />
+                                    </div>            
+                                  </div>
+                                    <div class="row mt-3">
+                                    <div class="col-12 col-sm-4">
+                                      <label>Directorate</label>
+                                      <input class="multisteps-form__input form-control" type="number" disabled />
+                                    </div>
+                                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                      <label>State Office</label>
+                                      <input class="multisteps-form__input form-control" type="email" disabled />
+                                    </div>
+                                    <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                      <label>Region</label>
+                                      <input class="multisteps-form__input form-control" type="text" disabled />
+                                    </div>            
+                                  </div>
+                                 </fieldset>
+                                  <br />
+                                  <h5 class="font-weight-bolder">Application Completion</h5>
+                                  <fieldset class="border p-2">
+                                    <div class="row mt-3">
+                                            <div class="col-12 col-sm-6">
+                                              <fieldset class="border p-2">
+                                               
+                                                <div class="col-12 col-sm-12">
+                                                  <label>Did customer receive help to complete application? <span style="color:#ff0000">*</label>
+                                                    <select class="form-control selectpicker" name="lga" id="lga">
+                                                      <option>--Select--</option>
+                                                      <option value="Choice 1">Yes</option>
+                                                      <option value="Choice 2">No</option>
+                                                    </select>
+                                                </div>
+                                               <div id="">
+                                                <div class="col-12 col-sm-12">
+                                                  <label>External Consultant<span style="color:#ff0000">*</label>
+                                                  <input class="multisteps-form__input form-control" type="text" placeholder="eg." />
+                                                </div>
+                                                <div class="col-12 col-sm-12">
+                                                  <label>SME Consultant<span style="color:#ff0000">*</label>
+                                                  <input class="multisteps-form__input form-control" type="text" placeholder="eg." />
+                                                </div> 
+                                               </div>
+                                              </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                              <fieldset class="border p-2">                                                
+                                                <div class="col-12 col-sm-12">
+                                                  <label>Is your account audited? <span style="color:#ff0000">*</label>
+                                                    <select class="form-control selectpicker" name="lga" id="lga">
+                                                      <option>--Select--</option>
+                                                      <option value="Choice 1">Yes</option>
+                                                      <option value="Choice 2">No</option>
+                                                    </select>
+                                                </div>
+                                                <div id="">
+                                                  <div class="col-12 col-sm-12">
+                                                    <label>Accredited Auditor<span style="color:#ff0000">*</label>
+                                                    <input class="multisteps-form__input form-control" type="text" placeholder="eg." />
+                                                  </div>
+                                                  <div class="col-12 col-sm-12">
+                                                    <label>Other Auditor<span style="color:#ff0000">*</label>
+                                                    <input class="multisteps-form__input form-control" type="text" placeholder="eg." />
+                                                  </div> 
+                                                 </div>                                           
+                                              </fieldset>
+                                            </div>                                                     
+                                          </div>                         
+                                    </fieldset>   
+                                <br/>
+
+                                <div  id="proposed-collateral-table" style="display: none;">
+                      
+                                  <fieldset class="border p-2" >
+                                    
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="card">
+                                          <div class="card-body px-0 pb-0">
+                                            <h5 class="table-header">Proposed Collateral Details</h5>
+                                            <div class="table-responsive">
+                                              <table class="table table-flush" id="products-list">
+                                                <thead class="thead-light">
+                                                  <tr>
+                                                    <th>S/N</th>
+                                                    <th>Collateral Type</th>
+                                                    <th>Description</th>
+                                                    <th>Location</th>
+                                                    <th>Value</th> 
+                                                    <th>Reference Number</th>                            
+                                                    <th></th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="text-sm">1</td>                              
+                                                    <td class="text-sm">Fixed</td>
+                                                    <td class="text-sm">On Lending</td>
+                                                    <td class="text-sm">Lagos</td>
+                                                    <td class="text-sm">#250,000</td>                                           
+                                                    <td class="text-sm">456987321</td>     
+                                                    <td class="text-sm">
+                                                      <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="text-sm">2</td>                              
+                                                    <td class="text-sm">Fixed</td>
+                                                    <td class="text-sm">Term Loan</td>
+                                                    <td class="text-sm">Abia</td>
+                                                    <td class="text-sm">#35,000,000</td>                                           
+                                                    <td class="text-sm">789564123</td>  
+                                                    <td class="text-sm">
+                                                      <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                                    </td>
+                                                  </tr>                       
+                                                </tbody>
+                                               
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </fieldset> 
+                                </div>
+                                  <div class="row">
+                                    <div class="button-row d-flex mt-4 col-12">
+                                      <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
+                                        title="Prev">Prev</button>
+                                      <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
+                                        title="">Save</button>
+                                      <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Send">Submit</button>
+                                    </div>
+                                  </div>
+                                </div>
+                     </div>                              
                   </form>
                 </div>
               </div>
