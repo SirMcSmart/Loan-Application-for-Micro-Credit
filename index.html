@@ -73,6 +73,11 @@
       opacity: 0 !important
   }
 
+  tfoot {
+    background-color: #15390E;
+    color: #fff;
+    padding: 20px 20px;
+}
  .table-header{
    background-color: #15390E;
    color: #fff;
@@ -89,13 +94,13 @@
 .selectpicker {
 	 width: 100%;
 	 max-width: 100%;
-	 padding: 0.75rem;
+	 padding: 0.5rem;
 	 margin: 8px -2px 20px;
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
 	 font-size: 1rem;
-	 min-height: 49px;
+	 min-height: 40px;
 }
 .selectpicker:focus, .selectpicker:hover {
 	 outline: none;
@@ -105,13 +110,13 @@
 input[type="file"] {
 	 width: 100%;
 	 max-width: 100%;
-	 padding: 0.75rem;
+	 padding: 0.5rem;
 	 margin: 8px -2px 20px;
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
 	 font-size: 1rem;
-	 min-height: 49px;
+	 min-height: 40px;
 }
  input[type="file"]:focus, input[type="file"]:hover {
 	 outline: none;
@@ -121,13 +126,13 @@ input[type="file"] {
 input[type="date"] {
 	 width: 100%;
 	 max-width: 100%;
-	 padding: 0.75rem;
+	 padding: 0.5rem;
 	 margin: 8px -2px 20px;
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
 	 font-size: 1rem;
-	 min-height: 49px;
+	 min-height: 40px;
 }
  input[type="date"]:focus, input[type="date"]:hover {
 	 outline: none;
@@ -136,13 +141,13 @@ input[type="date"] {
 input[type="number"] {
 	 width: 100%;
 	 max-width: 100%;
-	 padding: 0.75rem;
+	 padding: 0.5rem;
 	 margin: 8px -2px 20px;
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
 	 font-size: 1rem;
-	 min-height: 49px;
+	 min-height: 40px;
 }
  input[type="number"]:focus, input[type="number"]:hover {
 	 outline: none;
@@ -151,13 +156,13 @@ input[type="number"] {
 input[type="email"] {
 	 width: 100%;
 	 max-width: 100%;
-	 padding: 0.75rem;
+	 padding: 0.5rem;
 	 margin: 8px -2px 20px;
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
 	 font-size: 1rem;
-	 min-height: 49px;
+	 min-height: 40px;
 }
  input[type="email"]:focus, input[type="email"]:hover {
 	 outline: none;
@@ -166,13 +171,13 @@ input[type="email"] {
  input[type="text"] {
 	 width: 100%;
 	 max-width: 100%;
-	 padding: 0.75rem;
+	 padding: 0.5rem;
 	 margin: 8px -2px 20px;
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
 	 font-size: 1rem;
-	 min-height: 49px;
+	 min-height: 40px;
 }
  input[type="text"]:focus, input[type="text"]:hover {
 	 outline: none;
@@ -185,13 +190,13 @@ input[type="email"] {
 .input-group-text {
 	 width: 100%;
 	 max-width: 100%;
-	 padding: 0.75rem;
+	 padding: 0.5rem;
 	 margin: 8px -2px 20px;
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
 	 font-size: 1rem;
-	 min-height: 49px;
+	 min-height: 40px;
 }
  .input-group-text:focus, .input-group-text:hover {
 	 outline: none;
@@ -637,7 +642,7 @@ input[type="email"] {
                               <label>Loan Amount Requested (NGN)<span style="color:#ff0000">*</label>
                                 <div class="input-group mb-2">
                                   <div class="input-group-prepend">
-                                    <div class="input-group-text">#</div>
+                                    <div class="input-group-text"><span>&#8358;</span></div>
                                   </div>
                                   <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                                 </div>
@@ -651,8 +656,7 @@ input[type="email"] {
                                   <option value="Choice 2">Medium term</option>
                                   <option value="Choice 3">Long term</option>
                                 </select>
-                            </div>
-                                     
+                            </div>                                     
                           </div>
                           <div class="row mt-3">                 
                            <div class="col-12 col-sm-6">
@@ -680,8 +684,7 @@ input[type="email"] {
                             <div class="col-12 col-sm-12 mt-3 mt-sm-0">
                               <label>Loan Purpose <span style="color:#ff0000">*</label>
                               <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea>
-                            </div>
-                                     
+                            </div>                                     
                           </div>
                         </fieldset>
                         <br>
@@ -693,7 +696,12 @@ input[type="email"] {
                                       <h6 class="font-weight-bolder">Equity</h6>
                                       <div class="col-12 col-sm-12">
                                         <label>Equity Contribution (NGN)<span style="color:#ff0000">*</label>
-                                        <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                                          <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                            <div class="input-group-text"><span>&#8358;</span></div>
+                                            </div>
+                                            <input type="number" class="form-control" id="inlineFormInputGroup1" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                          </div>
                                       </div>
                                       <div class="col-12 col-sm-12 mt-3 mt-sm-0">
                                         <label>Equity Description<span style="color:#ff0000">*</label>
@@ -710,13 +718,75 @@ input[type="email"] {
                                       </div>
                                       <div class="col-12 col-sm-12">
                                         <label>Value (NGN)<span style="color:#ff0000">*</label>
-                                        <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
+                                          <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                            <div class="input-group-text"><span>&#8358;</span></div>
+                                            </div>
+                                            <input type="number" class="form-control" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                          </div>
                                       </div>
                                       <div class="button-row d-flex mt-4">
-                                        <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-asset-description-table" title="Prev">Add</button>
+                                        <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-equity-existing-assets-table" title="Prev">Add</button>
                                       </div>
                                     </fieldset>
                                   </div>                                                     
+                                </div> 
+                                <br>
+                                <div  id="equity-existing-assets-table" style="display: none;">              
+                                  <fieldset class="border p-2" >
+                                    
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <div class="card">
+                                          <div class="card-body px-0 pb-0">
+                                            <h5 class="table-header">Existing Assets</h5>
+                                            <div class="table-responsive">
+                                              <table class="table table-flush" id="products-list" style="width: 100%;">
+                                                <thead class="thead-light">
+                                                  <tr>
+                                                    <th>S/N</th>
+                                                    <th>Asset </th>
+                                                    <th>Value (NGN)</th>                        
+                                                    <th></th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="text-sm">1</td>                              
+                                                    <td class="text-sm">Power Machine</td>
+                                                    <td class="text-sm">#1,600,000</td>  
+                                                    <td class="text-sm">
+                                                      <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="text-sm">2</td>                              
+                                                    <td class="text-sm">Block Machine</td>
+                                                    <td class="text-sm">#3,200,000</td> 
+                                                    <td class="text-sm">
+                                                      <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                      <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                                    </td>
+                                                  </tr>                    
+                                                </tbody>
+                                                <tfoot>
+                                                  <tr>
+                                                    <th></th>
+                                                    <th>Grand Total</th>
+                                                    <th>#4,800,000</th>                        
+                                                    <th></th>
+                                                  </tr>
+                                                </tfoot>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </fieldset> 
                                 </div>                         
                           </fieldset>   
                       <br/>
@@ -778,28 +848,32 @@ input[type="email"] {
                               <div class="col-12">
                                 <div class="card">
                                   <div class="card-body px-0 pb-0">
-                                    <h5 class="table-header">Assets to be Financed</h5>
+                                    <h5 class="table-header">Assets to be Financed/Working Capital</h5>
                                     <div class="table-responsive">
                                       <table class="table table-flush" id="products-list">
                                         <thead class="thead-light">
                                           <tr>
                                             <th>S/N</th>
-                                            <th>Asset Description</th>
-                                            <th>Specification</th>
-                                            <th>Quantity</th>
-                                            <th>Cost</th>
-                                            <th>Supplier</th>                             
+                                            <th>Type</th>
+                                            <th>Description of items</th>
+                                            <th>Supplier</th>
+                                            <th>Supplier's Contact</th>
+                                            <th>Quantity</th>                                             
+                                            <th>Unit Price (NGN)</th>
+                                            <th>Total Price (NGN)</th>                            
                                             <th></th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
                                             <td class="text-sm">1</td>                              
+                                            <td class="text-sm">Asset</td>
                                             <td class="text-sm">Power Machine</td>
-                                            <td class="text-sm">Big Size</td>
+                                            <td class="text-sm">Chijioke Ofoma</td>
+                                            <td class="text-sm">0701234567</td>
                                             <td class="text-sm">2</td>
                                             <td class="text-sm">#1,600,000</td>
-                                            <td class="text-sm">Chijioke Ofoma</td>   
+                                            <td class="text-sm">#3,200,000</td>   
                                             <td class="text-sm">
                                               <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                               <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -808,11 +882,13 @@ input[type="email"] {
                                           </tr>
                                           <tr>
                                             <td class="text-sm">2</td>                              
+                                            <td class="text-sm">Working Capital</td>
                                             <td class="text-sm">Block Machine</td>
-                                            <td class="text-sm">Small Size</td>
+                                            <td class="text-sm">Chijioke Ofoma</td>
+                                            <td class="text-sm">0701234567</td>
                                             <td class="text-sm">10</td>
-                                            <td class="text-sm">#3,200,000</td>
-                                            <td class="text-sm">Chijioke Ofoma</td>   
+                                            <td class="text-sm">#800,000</td>
+                                            <td class="text-sm">#8,000,000</td>   
                                             <td class="text-sm">
                                               <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                               <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -820,7 +896,19 @@ input[type="email"] {
                                             </td>
                                           </tr>                    
                                         </tbody>
-                                       
+                                        <tfoot>
+                                          <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Grand Total</th>
+                                            <th>#4,800,000</th>                        
+                                            <th></th>
+                                          </tr>
+                                        </tfoot>
                                       </table>
                                     </div>
                                   </div>
@@ -941,7 +1029,7 @@ input[type="email"] {
                             <input class="multisteps-form__input form-control" type="number" placeholder="eg. Off-White" />
                           </div> 
                           <div class="col-12 col-sm-4">
-                            <label>Type<span style="color:#ff0000">*</label>
+                            <label>Moratorium<span style="color:#ff0000">*</label>
                               <select class="form-control selectpicker" name="lga" id="lga">
                                 <option>--Select--</option>
                                 <option value="Choice 1">1 Month</option>
@@ -1023,22 +1111,26 @@ input[type="email"] {
                                     <thead class="thead-light">
                                       <tr>
                                         <th>S/N</th>
-                                        <th>Asset Description</th>
-                                        <th>Specification</th>
-                                        <th>Quantity</th>
-                                        <th>Cost</th>
-                                        <th>Supplier</th>                             
+                                        <th>Type</th>
+                                        <th>Tenor (in months)</th>
+                                        <th>Moratorium</th>
+                                        <th>Interest Payment Mode</th>
+                                        <th>Interest Rate (%)</th>
+                                        <th>Principal Repayment Mode</th>
+                                        <th>Instalment Payments</th>                             
                                         <th></th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <td class="text-sm">1</td>                              
-                                        <td class="text-sm">Power Machine</td>
-                                        <td class="text-sm">Big Size</td>
-                                        <td class="text-sm">2</td>
-                                        <td class="text-sm">#1,600,000</td>
-                                        <td class="text-sm">Chijioke Ofoma</td>   
+                                        <td class="text-sm">Working Capital</td>
+                                        <td class="text-sm">6</td>
+                                        <td class="text-sm">6 Months</td>
+                                        <td class="text-sm">Quarterly</td>
+                                        <td class="text-sm">20%</td>
+                                        <td class="text-sm">Quarterly</td>
+                                        <td class="text-sm">#352,000</td>   
                                         <td class="text-sm">
                                           <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                           <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -1047,11 +1139,13 @@ input[type="email"] {
                                       </tr>
                                       <tr>
                                         <td class="text-sm">2</td>                              
-                                        <td class="text-sm">Block Machine</td>
-                                        <td class="text-sm">Small Size</td>
-                                        <td class="text-sm">10</td>
-                                        <td class="text-sm">#3,200,000</td>
-                                        <td class="text-sm">Chijioke Ofoma</td>   
+                                        <td class="text-sm">Asset</td>
+                                        <td class="text-sm">8</td>
+                                        <td class="text-sm">8 Months</td>
+                                        <td class="text-sm">Monthly</td>
+                                        <td class="text-sm">25%</td>
+                                        <td class="text-sm">Monthly</td>
+                                        <td class="text-sm">#180,000</td>   
                                         <td class="text-sm">
                                           <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                           <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -1059,7 +1153,19 @@ input[type="email"] {
                                         </td>
                                       </tr>                    
                                     </tbody>
-                                   
+                                    <tfoot>
+                                      <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th>Grand Total</th>
+                                        <th>#532,000</th>                        
+                                        <th></th>
+                                      </tr>
+                                    </tfoot>
                                   </table>
                                 </div>
                               </div>
@@ -1174,7 +1280,64 @@ input[type="email"] {
                           <div class="button-row d-flex mt-4">
                                      <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-add-bank-account-table" title="Prev">Add</button>
                                    </div> 
-
+                      
+                                   <br/> 
+                                   <div  id="bank-account-table" style="display: none;">
+                         
+                                     <fieldset class="border p-2" >
+                                       
+                                       <div class="row">
+                                         <div class="col-12">
+                                           <div class="card">
+                                             <div class="card-body px-0 pb-0">
+                                               <h5 class="table-header">Bank Accounts</h5>
+                                               <div class="table-responsive">
+                                                 <table class="table table-flush" id="products-list">
+                                                   <thead class="thead-light">
+                                                     <tr>
+                                                       <th>S/N</th>
+                                                       <th>Name of Bank</th>
+                                                       <th>Account Type</th>
+                                                       <th>Account Number</th>                           
+                                                       <th>BVN</th>                           
+                                                       <th></th>
+                                                     </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                     <tr>
+                                                       <td class="text-sm">1</td>                              
+                                                       <td class="text-sm">Access Bank Plc</td>
+                                                       <td class="text-sm">Current</td>
+                                                       <td class="text-sm">0123456789</td> 
+                                                       <td class="text-sm">22123456789</td> 
+                                                       <td class="text-sm">
+                                                         <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                         <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                         <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                                       </td>
+                                                     </tr>
+                                                     <tr>
+                                                       <td class="text-sm">2</td>                              
+                                                       <td class="text-sm">Titan Trust Bank </td>
+                                                       <td class="text-sm">Savings</td>
+                                                       <td class="text-sm">9876543210</td>  
+                                                       <td class="text-sm">22276543210</td>  
+                                                       <td class="text-sm">
+                                                         <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                         <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                         <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
+                                                       </td>
+                                                     </tr>                       
+                                                   </tbody>
+                                                  
+                                                 </table>
+                                               </div>
+                                             </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </fieldset> 
+                                   </div>
                       </fieldset>
                       <br>
                       <h5 class="font-weight-bolder header-font"> <strong>Existing Loan with other banks</strong></h5>
@@ -1204,7 +1367,7 @@ input[type="email"] {
                             <label>Disbursed Amount <span style="color:#ff0000">*</label>
                               <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                  <div class="input-group-text">#</div>
+                                  <div class="input-group-text"><span>&#8358;</span></div>
                                 </div>
                                 <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                               </div>
@@ -1219,7 +1382,7 @@ input[type="email"] {
                   <label>Outstanding Balance<span style="color:#ff0000">*</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
-                        <div class="input-group-text">#</div>
+                        <div class="input-group-text"><span>&#8358;</span></div>
                       </div>
                       <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                     </div>
@@ -1239,60 +1402,7 @@ input[type="email"] {
                           <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-add-existing-loan-table" title="Prev">Add</button>
                         </div>  
                </fieldset> 
-            <br/> 
-            <div  id="bank-account-table" style="display: none;">
-  
-              <fieldset class="border p-2" >
-                
-                <div class="row">
-                  <div class="col-12">
-                    <div class="card">
-                      <div class="card-body px-0 pb-0">
-                        <h5 class="table-header">Bank Accounts</h5>
-                        <div class="table-responsive">
-                          <table class="table table-flush" id="products-list">
-                            <thead class="thead-light">
-                              <tr>
-                                <th>S/N</th>
-                                <th>Name of Bank</th>
-                                <th>Account Type</th>
-                                <th>Account Number</th>                           
-                                <th></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="text-sm">1</td>                              
-                                <td class="text-sm">Access Bank Plc</td>
-                                <td class="text-sm">Current</td>
-                                <td class="text-sm">0123456789</td> 
-                                <td class="text-sm">
-                                  <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                  <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                  <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="text-sm">2</td>                              
-                                <td class="text-sm">Titan Trust Bank </td>
-                                <td class="text-sm">Savings</td>
-                                <td class="text-sm">9876543210</td>  
-                                <td class="text-sm">
-                                  <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                  <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                  <a href="#"><ion-icon name="trash" style="color: #ff0000;"></ion-icon></a>                                
-                                </td>
-                              </tr>                       
-                            </tbody>
-                           
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </fieldset> 
-            </div>
+          
             <div  id="existing-loan-table" style="display: none;">
   
               <fieldset class="border p-2" >
@@ -1306,23 +1416,23 @@ input[type="email"] {
                           <table class="table table-flush" id="products-list">
                             <thead class="thead-light">
                               <tr>
-                                <th>Loan Date</th>
                                 <th>Name of lender</th>
                                 <th>Loan Type</th>
+                                <th>Loan Date</th>
                                 <th>Disbursed Amount</th>
                                 <th>Outstanding Balance</th>
-                                <th>Maturity Date</th>                             
+                                <th>Collateral Pledged</th>                             
                                 <th></th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td class="text-sm">25/02/2019</td>                              
                                 <td class="text-sm">Access Bank Plc</td>
                                 <td class="text-sm">On Lending</td>
+                                <td class="text-sm">25/02/2019</td>                              
                                 <td class="text-sm">#5,000,000</td>
                                 <td class="text-sm">#250,000</td>
-                                <td class="text-sm">22/01/2022</td>   
+                                <td class="text-sm">Bill of Sale</td>   
                                 <td class="text-sm">
                                   <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                   <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -1330,12 +1440,12 @@ input[type="email"] {
                                 </td>
                               </tr>
                               <tr>
-                                <td class="text-sm">23/07/2021</td>                              
                                 <td class="text-sm">Titan Trust Bank </td>
                                 <td class="text-sm">Term Loan</td>
+                                <td class="text-sm">23/07/2021</td>                              
                                 <td class="text-sm">#50,000,000</td>
                                 <td class="text-sm">#35,000,000</td>
-                                <td class="text-sm">17/05/2026</td>   
+                                <td class="text-sm">Cross Guarantees</td>   
                                 <td class="text-sm">
                                   <a href="#"><ion-icon name="eye" style="color: #059128;"></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                                   <a href="#"><ion-icon name="pencil"  style="color: #2600ff; "></ion-icon></a> <ion-icon name="ellipsis-vertical-outline"></ion-icon>
@@ -1533,7 +1643,7 @@ input[type="email"] {
                               title="Prev">Prev</button>
                             <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
                               title="">Save</button>
-                            <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Send">Submit</button>
+                            <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Send">Next</button>
                           </div>
                         </div>
                       </div>
@@ -1963,7 +2073,15 @@ input[type="email"] {
         })
       })
   </script>
-  
+  <script>
+    var elementEquityExisting = document.getElementById("equity-existing-assets-table");
+        document.addEventListener("DOMContentLoaded", function(event) { 
+        document.getElementById("btn-equity-existing-assets-table").addEventListener('click', function(e) {
+            //your event handling code here       
+            elementEquityExisting.style.display = "block"
+        })
+      })
+  </script>
  
     <script>
       var elementaccountdet = document.getElementById("asset-description-table");
@@ -1974,12 +2092,21 @@ input[type="email"] {
           })
         })
     </script>
+     <script>
+      var elementLoanrepayment = document.getElementById("Loan-repayment-details-table");
+          document.addEventListener("DOMContentLoaded", function(event) { 
+          document.getElementById("btn-Loan-repayment-details-table").addEventListener('click', function(e) {
+              //your event handling code here       
+              elementLoanrepayment.style.display = "block"
+          })
+        })
+    </script>
     <script>
-    var elementbank = document.getElementById("bank-account-table");
+    var elementbank2 = document.getElementById("bank-account-table");
         document.addEventListener("DOMContentLoaded", function(event) { 
         document.getElementById("btn-add-bank-account-table").addEventListener('click', function(e) {
             //your event handling code here       
-            elementbank.style.display = "block"
+            elementbank2.style.display = "block"
         })
       })
   </script>
