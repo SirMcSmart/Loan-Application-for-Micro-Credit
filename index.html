@@ -95,7 +95,7 @@
 	 width: 100%;
 	 max-width: 100%;
 	 padding: 0.5rem;
-	 margin: 8px -2px 20px;
+	 /* margin: 8px -2px 20px; */
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
@@ -111,7 +111,7 @@ input[type="file"] {
 	 width: 100%;
 	 max-width: 100%;
 	 padding: 0.5rem;
-	 margin: 8px -2px 20px;
+	 /* margin: 8px -2px 20px; */
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
@@ -127,7 +127,7 @@ input[type="date"] {
 	 width: 100%;
 	 max-width: 100%;
 	 padding: 0.5rem;
-	 margin: 8px -2px 20px;
+	 /* margin: 8px -2px 20px; */
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
@@ -142,7 +142,7 @@ input[type="number"] {
 	 width: 100%;
 	 max-width: 100%;
 	 padding: 0.5rem;
-	 margin: 8px -2px 20px;
+	 /* margin: 8px -2px 20px; */
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
@@ -157,7 +157,7 @@ input[type="email"] {
 	 width: 100%;
 	 max-width: 100%;
 	 padding: 0.5rem;
-	 margin: 8px -2px 20px;
+	 /* margin: 8px -2px 20px; */
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
@@ -172,7 +172,7 @@ input[type="email"] {
 	 width: 100%;
 	 max-width: 100%;
 	 padding: 0.5rem;
-	 margin: 8px -2px 20px;
+	 /* margin: 8px -2px 20px; */
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
@@ -191,7 +191,7 @@ input[type="email"] {
 	 width: 100%;
 	 max-width: 100%;
 	 padding: 0.5rem;
-	 margin: 8px -2px 20px;
+	 /* margin: 8px -2px 20px; */
 	 box-sizing: border-box;
 	 border-radius: 4px;
 	 border: 1px solid rgba(7, 199, 39, 0.7);
@@ -571,13 +571,11 @@ input[type="email"] {
                         <div class="row mt-3">
                           <div class="col-12 col-sm-4">
                             <label>Surname <span style="color:#ff0000">*</label>
-                            <input class="multisteps-form__input form-control" type="text"  disabled/>
-                            <span role="tooltip" id="a11y-tooltip">Please enter Surname </span>
+                            <input class="multisteps-form__input form-control" type="text"  disabled/>                           
                           </div>
                           <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>First Name <span style="color:#ff0000">*</label>
                             <input class="multisteps-form__input form-control" type="text" disabled />
-                            <span role="tooltip" id="a11y-tooltip">Please enter First Name </span>
                           </div>
                           <div class="col-12 col-sm-4 mt-3 mt-sm-0">
                             <label>Other Names</label>
@@ -622,20 +620,24 @@ input[type="email"] {
                 <div class="row mt-3">                 
                   <div class="col-12 col-sm-4">
                      <label>Is this a first time request? <span style="color:#ff0000">*</label>
-                       <select class="form-control selectpicker" name="lga" id="lga">
+                       <select class="form-control selectpicker" name="lga" id="firstTimeRequestSelect">
                          <option>--Select--</option>
-                         <option value="Choice 1">Yes</option>
-                         <option value="Choice 2">No</option>
+                         <option value="Yes">Yes</option>
+                         <option value="No">No</option>
                        </select>
                    </div>
-                   <div class="col-12 col-sm-4">
-                     <label>Number of times applied</label>
+                   <div id="firstTimeRequest" style="display: none;">
+
+                    <div class="col-12 col-sm-4">
+                      <label>Number of times applied</label>
+                       <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
+                    </div> 
+                    <div class="col-12 col-sm-4">
+                     <label>Number of times loan was granted</label>
                       <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
-                   </div> 
-                   <div class="col-12 col-sm-4">
-                    <label>Number of times loan was granted</label>
-                     <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
-                  </div>                                                 
+                   </div>  
+                   </div>
+                  
                  </div>
                   <div class="row mt-3">
                             <div class="col-12 col-sm-6">
@@ -644,9 +646,9 @@ input[type="email"] {
                                   <div class="input-group-prepend">
                                     <div class="input-group-text"><span>&#8358;</span></div>
                                   </div>
-                                  <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                  <input type="text" class="form-control number-separator"  class="form-control" id="loanAmountRequested"  placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01"aria-describedby="a11y-tooltip" required >
                                 </div>
-                              
+                                
                             </div>
                             <div class="col-12 col-sm-6">
                               <label>Loan Class<span style="color:#ff0000">*</label>
@@ -700,7 +702,7 @@ input[type="email"] {
                                             <div class="input-group-prepend">
                                             <div class="input-group-text"><span>&#8358;</span></div>
                                             </div>
-                                            <input type="number" class="form-control" id="inlineFormInputGroup1" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                            <input type="text" class="form-control number-separator"  id="inlineFormInputGroup1" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                                           </div>
                                       </div>
                                       <div class="col-12 col-sm-12 mt-3 mt-sm-0">
@@ -722,7 +724,7 @@ input[type="email"] {
                                             <div class="input-group-prepend">
                                             <div class="input-group-text"><span>&#8358;</span></div>
                                             </div>
-                                            <input type="number" class="form-control" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                            <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                                           </div>
                                       </div>
                                       <div class="button-row d-flex mt-4">
@@ -827,11 +829,21 @@ input[type="email"] {
                                     </div>  
                                     <div class="col-12 col-sm-4">
                                       <label>Unit Price (NGN)<span style="color:#ff0000">*</label>
-                                      <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                                        <div class="input-group mb-2">
+                                          <div class="input-group-prepend">
+                                          <div class="input-group-text"><span>&#8358;</span></div>
+                                          </div>
+                                          <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                        </div>
                                     </div>
                                     <div class="col-12 col-sm-4">
                                       <label>Total Price (NGN)<span style="color:#ff0000">*</label>
-                                      <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" disabled />
+                                        <div class="input-group mb-2">
+                                          <div class="input-group-prepend">
+                                          <div class="input-group-text"><span>&#8358;</span></div>
+                                          </div>
+                                          <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01" disabled>
+                                        </div>
                                     </div>
                                                         
                                   </div>
@@ -988,8 +1000,13 @@ input[type="email"] {
                                 </select>
                             </div>   
                             <div class="col-12 col-sm-4">
-                              <label>Requested Amount<span style="color:#ff0000">*</label>
-                              <input class="multisteps-form__input form-control" type="text" placeholder="eg. 0123456" disabled/>
+                              <label>Requested Amount(NGN)<span style="color:#ff0000">*</label>
+                                <div class="input-group mb-2">
+                                  <div class="input-group-prepend">
+                                  <div class="input-group-text"><span>&#8358;</span></div>
+                                  </div>
+                                  <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                </div>
                             </div>                                                 
                           </div>
                           <div class="row mt-3">
@@ -1369,7 +1386,7 @@ input[type="email"] {
                                 <div class="input-group-prepend">
                                   <div class="input-group-text"><span>&#8358;</span></div>
                                 </div>
-                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                                <input type="text" class="form-control number-separator"  id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                               </div>
                           </div>						                    
                         </div>
@@ -1384,7 +1401,7 @@ input[type="email"] {
                       <div class="input-group-prepend">
                         <div class="input-group-text"><span>&#8358;</span></div>
                       </div>
-                      <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                      <input type="text" class="form-control number-separator"  id="inlineFormInputGroup" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                     </div>
                 </div>                	
               <div class="col-12 col-sm-4">
@@ -1517,7 +1534,12 @@ input[type="email"] {
                       </div>
                       <div class="col-12 col-sm-4">
                         <label>Deposited Amount (NGN)<span style="color:#ff0000">*</label>
-                        <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text"><span>&#8358;</span></div>
+                            </div>
+                            <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                          </div>
                       </div>
                  </div>
                  <div class="row mt-3">
@@ -1527,7 +1549,12 @@ input[type="email"] {
                   </div>
                   <div class="col-12 col-sm-4">
                     <label>Net Worth (NGN)<span style="color:#ff0000">*</label>
-                    <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text"><span>&#8358;</span></div>
+                        </div>
+                        <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                      </div>
                   </div>
                   <div class="col-12 col-sm-4">
                     <label>Name of Organization<span style="color:#ff0000">*</label>
@@ -1551,15 +1578,30 @@ input[type="email"] {
          <div class="row mt-3">
           <div class="col-12 col-sm-4">
             <label>Amount (NGN)<span style="color:#ff0000">*</label>
-            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><span>&#8358;</span></div>
+                </div>
+                <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+              </div>
           </div>
           <div class="col-12 col-sm-4">
             <label>Forced Sale Value (NGN)<span style="color:#ff0000">*</label>
-            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><span>&#8358;</span></div>
+                </div>
+                <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+              </div>
           </div>
           <div class="col-12 col-sm-4">
             <label>Open Market Value (NGN)<span style="color:#ff0000">*</label>
-            <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><span>&#8358;</span></div>
+                </div>
+                <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+              </div>
           </div>
           </div>
           <div class="row mt-3">
@@ -1637,15 +1679,15 @@ input[type="email"] {
                           </div>
                         </fieldset> 
                       </div>
-                        <div class="row">
-                          <div class="button-row d-flex mt-4 col-12">
-                            <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
-                              title="Prev">Prev</button>
-                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                              title="">Save</button>
-                            <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Send">Next</button>
-                          </div>
-                        </div>
+
+                        
+                      <div class="button-row d-flex mt-4">
+                        <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
+                        <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="">Save</button>
+                        <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">Next</button>
+                      </div>
+
+                        
                       </div>
                     </div>
                      <!--single form panel-->
@@ -1731,13 +1773,13 @@ input[type="email"] {
                                                
                                                 <div class="col-12 col-sm-12">
                                                   <label>Did customer receive help to complete application? <span style="color:#ff0000">*</label>
-                                                    <select class="form-control selectpicker" name="lga" id="lga">
+                                                    <select class="form-control selectpicker" id="customerReceiveHelpSelect" name="lga" id="lga">
                                                       <option>--Select--</option>
-                                                      <option value="Choice 1">Yes</option>
-                                                      <option value="Choice 2">No</option>
+                                                      <option value="Yes">Yes</option>
+                                                      <option value="No">No</option>
                                                     </select>
                                                 </div>
-                                               <div id="">
+                                               <div id="customerReceiveHelp" style="display: none;" >
                                                 <div class="col-12 col-sm-12">
                                                   <label>External Consultant<span style="color:#ff0000">*</label>
                                                   <input class="multisteps-form__input form-control" type="text" placeholder="eg." />
@@ -1753,13 +1795,13 @@ input[type="email"] {
                                               <fieldset class="border p-2">                                                
                                                 <div class="col-12 col-sm-12">
                                                   <label>Is your account audited? <span style="color:#ff0000">*</label>
-                                                    <select class="form-control selectpicker" name="lga" id="lga">
+                                                    <select class="form-control selectpicker" id="accountAuditedSelect" name="lga" id="lga">
                                                       <option>--Select--</option>
-                                                      <option value="Choice 1">Yes</option>
-                                                      <option value="Choice 2">No</option>
+                                                      <option value="Yes">Yes</option>
+                                                      <option value="No">No</option>
                                                     </select>
                                                 </div>
-                                                <div id="">
+                                                <div id="accountAudited" style="display: none;">
                                                   <div class="col-12 col-sm-12">
                                                     <label>Accredited Auditor<span style="color:#ff0000">*</label>
                                                     <input class="multisteps-form__input form-control" type="text" placeholder="eg." />
@@ -1834,9 +1876,10 @@ input[type="email"] {
                                     </div>
                                   </fieldset> 
                                 </div>
+
                                   <div class="row">
                                     <div class="button-row d-flex mt-4 col-12">
-                                      <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button"
+                                      <button class="btn bg-gradient-secondary mb-0 js-btn-prev" type="button" 
                                         title="Prev">Prev</button>
                                       <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
                                         title="">Save</button>
@@ -1949,6 +1992,15 @@ input[type="email"] {
   <script src="./assets/js/plugins/quill.min.js"></script>
   <script src="./assets/js/plugins/multistep-form.js"></script>
 
+  <script src="./assets/js/easy-number-separator.js"></script>
+
+  <script>
+    easyNumberSeparator({
+      selector: '.number-separator',
+      separator: ',',
+      resultInput: '#result_input',
+    })
+  </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <!-- <script>
@@ -1965,6 +2017,7 @@ input[type="email"] {
       })
     })
   </script> -->
+
 
   <script>
     var element12 = document.getElementById("membership12");
@@ -2063,6 +2116,57 @@ input[type="email"] {
                   }
               })
             })
+  </script>
+  <script>
+    var elementfirstTimeRequest = document.getElementById("firstTimeRequest");
+      document.addEventListener("DOMContentLoaded", function(event) { 
+      document.getElementById("firstTimeRequestSelect").addEventListener('change', function(e) {
+        //your event handling code here
+        if(e.target.value == "Yes") {
+          elementfirstTimeRequest.classList.remove("invisible");
+          elementfirstTimeRequest.classList.add("visible");
+          elementfirstTimeRequest.style.display = "block"
+        }else{
+          elementfirstTimeRequest.classList.add("invisible");
+          elementfirstTimeRequest.classList.remove("visible");
+          elementfirstTimeRequest.style.display = "none"
+        }
+      })
+    })
+  </script>
+  <script>
+    var elementReceiveHelp = document.getElementById("customerReceiveHelp");
+      document.addEventListener("DOMContentLoaded", function(event) { 
+      document.getElementById("customerReceiveHelpSelect").addEventListener('change', function(e) {
+        //your event handling code here
+        if(e.target.value == "Yes") {
+          elementReceiveHelp.classList.remove("invisible");
+          elementReceiveHelp.classList.add("visible");
+          elementReceiveHelp.style.display = "block"
+        }else{
+          elementReceiveHelp.classList.add("invisible");
+          elementReceiveHelp.classList.remove("visible");
+          elementReceiveHelp.style.display = "none"
+        }
+      })
+    })
+  </script>
+  <script>
+    var elementaccountAudited = document.getElementById("accountAudited");
+      document.addEventListener("DOMContentLoaded", function(event) { 
+      document.getElementById("accountAuditedSelect").addEventListener('change', function(e) {
+        //your event handling code here
+        if(e.target.value == "Yes") {
+          elementaccountAudited.classList.remove("invisible");
+          elementaccountAudited.classList.add("visible");
+          elementaccountAudited.style.display = "block"
+        }else{
+          elementaccountAudited.classList.add("invisible");
+          elementaccountAudited.classList.remove("visible");
+          elementaccountAudited.style.display = "none"
+        }
+      })
+    })
   </script>
   <script>
     var elementindv = document.getElementById("shareholder-indv-table");
