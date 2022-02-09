@@ -626,17 +626,17 @@ input[type="email"] {
                          <option value="No">No</option>
                        </select>
                    </div>
-                   <div id="firstTimeRequest" style="display: none;">
+                  
 
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-sm-4" id="firstTimeRequest" style="display: none;">
                       <label>Number of times applied</label>
                        <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
                     </div> 
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-sm-4" id="firstTimeRequest2" style="display: none;">
                      <label>Number of times loan was granted</label>
                       <input class="multisteps-form__input form-control" type="number" placeholder="01234567890" title="Enter Company Name" aria-describedby="a11y-tooltip" required/>
                    </div>  
-                   </div>
+                  
                   
                  </div>
                   <div class="row mt-3">
@@ -1495,29 +1495,48 @@ input[type="email"] {
             <h3 class="font-weight-bolder header-font"> <strong>Proposed Collateral Details</strong></h3>
                       <div class="multisteps-form__content">
                         <div class="row mt-3">
-                          <div class="col-12 col-sm-4">
+                          <div class="col-12 col-sm-6">
                             <label>Collateral Type<span style="color:#ff0000">*</label>
-                              <select class="form-control selectpicker" name="lga" id="lga">
+                              <select class="form-control selectpicker" name="CollateralTypeSelect" id="CollateralTypeSelect">
                                 <option>--Select--</option>
-                                <option value="Choice 1">Option 1</option>
-                                <option value="Choice 2">Option 2</option>
-                                <option value="Choice 3">Option 3</option>
+                                <option value="Bank Guarantee">Bank Guarantee</option>
+                                <option value="Cash Deposit">Cash Deposit</option>
+                                <option value="Corporate Guarantee">Corporate Guarantee</option>
+                                <option value="Cross Guarantees">Cross Guarantees</option>
+                                <option value="External Guarantor">External Guarantor</option>
+                                <option value="Personal Guarantee">Personal Guarantee</option>
+                                <option value="Credit Life Insurance">Credit Life Insurance</option>
+                                <option value="Equitable Mortgage">Equitable Mortgage</option>
+                                <option value="Legal Mortgage">Legal Mortgage</option>
+                                <option value="Mortgage Debenture">Mortgage Debenture</option>
+                                <option value="Parri Passu Mortgage">Parri Passu Mortgage</option>
+                                <option value="Trust Deeds (Parri Passu)">Trust Deeds (Parri Passu)</option>
                               </select>
                           </div>
-                          <div class="col-12 col-sm-4">
+                          <div class="col-12 col-sm-6">
                             <label>Reference Number<span style="color:#ff0000">*</label>
                             <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
-                          </div>
-                          <div class="col-12 col-sm-4">
-                            <label>Guaranteeing Bank<span style="color:#ff0000">*</label>
-                              <select class="form-control selectpicker" name="lga" id="lga">
-                                <option>--Select--</option>
-                                <option value="Choice 1">Option 1</option>
-                                <option value="Choice 2">Option 2</option>
-                                <option value="Choice 3">Option 3</option>
-                              </select>
-                          </div>
+                          </div>                          
                      </div>
+                     
+                      <div id="BankGuaranteeDiv" style="display: none;">
+                        <fieldset class="border p-2">
+                     <div class="row mt-3">
+                      <div class="col-12 col-sm-6">
+                        <label>Guaranteeing Bank<span style="color:#ff0000">*</label>
+                          <select class="form-control selectpicker" name="lga" id="lga">
+                            <option>--Select--</option>
+                            <option value="Choice 1">Option 1</option>
+                            <option value="Choice 2">Option 2</option>
+                            <option value="Choice 3">Option 3</option>
+                          </select>
+                      </div>                      
+                     </div>
+                    </fieldset>
+                  </div>
+                  
+                      <div id="CashDepositDiv" style="display: none;">
+                        <fieldset class="border p-2">
                      <div class="row mt-3">
                       <div class="col-12 col-sm-4">
                         <label>Name of Bank<span style="color:#ff0000">*</label>
@@ -1542,6 +1561,37 @@ input[type="email"] {
                           </div>
                       </div>
                  </div>
+                </fieldset>
+              </div>
+              
+                  <div id="CorporateGuaranteeDiv" style="display: none;">
+                    <fieldset class="border p-2">
+                 <div class="row mt-3">
+                  <div class="col-12 col-sm-6">
+                    <label>Name of Guarantor<span style="color:#ff0000">*</label>
+                    <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label>Net Worth (NGN)<span style="color:#ff0000">*</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text"><span>&#8358;</span></div>
+                        </div>
+                        <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="row mt-3">
+                  <div class="col-12 col-sm-12">
+                    <label>Address<span style="color:#ff0000">*</label>
+                      <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
+                  </div>
+             </div>
+            </fieldset>
+          </div>
+        
+                  <div id="PersonalGuaranteeDiv" style="display: none;">
+                    <fieldset class="border p-2">
                  <div class="row mt-3">
                   <div class="col-12 col-sm-4">
                     <label>Name of Guarantor<span style="color:#ff0000">*</label>
@@ -1556,68 +1606,89 @@ input[type="email"] {
                         <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
                       </div>
                   </div>
-                  <div class="col-12 col-sm-4">
-                    <label>Name of Organization<span style="color:#ff0000">*</label>
-                    <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                  <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                    <label><small>Statement of Net Worth<span style="color:#ff0000">*</small></label>
+                    <input class="multisteps-form__input form-control" type="file" placeholder="" />
+                  </div>
+                  </div>
+                  <div class="row mt-3">
+                  <div class="col-12 col-sm-12">
+                    <label>Address<span style="color:#ff0000">*</label>
+                      <textarea rows="2" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
                   </div>
              </div>
-             <div class="row mt-3">
-              <div class="col-12 col-sm-4">
-                <label>Address<span style="color:#ff0000">*</label>
-                  <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
-              </div>
-              <div class="col-12 col-sm-4">
-                <label>Asset Location<span style="color:#ff0000">*</label>
-                  <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
-              </div>
-              <div class="col-12 col-sm-4">
-                <label>Asset Description<span style="color:#ff0000">*</label>
-                  <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
-              </div>
-         </div> 
-         <div class="row mt-3">
-          <div class="col-12 col-sm-4">
-            <label>Amount (NGN)<span style="color:#ff0000">*</label>
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                <div class="input-group-text"><span>&#8358;</span></div>
-                </div>
-                <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
-              </div>
+            </fieldset>
           </div>
-          <div class="col-12 col-sm-4">
-            <label>Forced Sale Value (NGN)<span style="color:#ff0000">*</label>
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                <div class="input-group-text"><span>&#8358;</span></div>
-                </div>
-                <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+          
+              <div id="CreditLifeInsuranceDiv" style="display: none;">
+                <fieldset class="border p-2">
+             <div class="row mt-3">             
+              <div class="col-12 col-sm-6">
+                <label>Name of Organization<span style="color:#ff0000">*</label>
+                <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
               </div>
-          </div>
-          <div class="col-12 col-sm-4">
-            <label>Open Market Value (NGN)<span style="color:#ff0000">*</label>
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                <div class="input-group-text"><span>&#8358;</span></div>
-                </div>
-                <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+              <div class="col-12 col-sm-6">
+                <label>Amount (NGN)<span style="color:#ff0000">*</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text"><span>&#8358;</span></div>
+                    </div>
+                    <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                  </div>
               </div>
-          </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12 col-sm-4">
-              <label>Valuation Date<span style="color:#ff0000">*</label>
-              <input class="multisteps-form__input form-control" type="text"  />
             </div>
-            <div class="col-12 col-sm-8">
-              <label>Valuation Company<span style="color:#ff0000">*</label>
-              <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
-            </div>
-            
-            </div>
-                         <div class="button-row d-flex mt-4">
-                                    <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-add-proposed-collateral-table" title="Prev">Add</button>
-                                  </div>
+          </fieldset>
+        </div>
+        
+            <div id="EquitableMortgageDiv" style="display: none;">
+              <fieldset class="border p-2">
+                <div class="row mt-3">  
+                  <div class="col-12 col-sm-6">
+                    <label>Asset Location<span style="color:#ff0000">*</label>
+                      <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label>Asset Description<span style="color:#ff0000">*</label>
+                      <textarea rows="3" class="multisteps-form__input form-control selectpicker" placeholder="">   </textarea> 
+                  </div>
+             </div> 
+             <div class="row mt-3">          
+              <div class="col-12 col-sm-6">
+                <label>Forced Sale Value (NGN)<span style="color:#ff0000">*</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text"><span>&#8358;</span></div>
+                    </div>
+                    <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <label>Open Market Value (NGN)<span style="color:#ff0000">*</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text"><span>&#8358;</span></div>
+                    </div>
+                    <input type="text" class="form-control number-separator" id="inlineFormInputGroup2" placeholder="10000" pattern="[0-9]+([\.,][0-9]+)?" step="0.01">
+                  </div>
+              </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12 col-sm-4">
+                  <label>Valuation Date<span style="color:#ff0000">*</label>
+                  <input class="multisteps-form__input form-control" type="text"  />
+                </div>
+                <div class="col-12 col-sm-8">
+                  <label>Valuation Company<span style="color:#ff0000">*</label>
+                  <input class="multisteps-form__input form-control" type="text" placeholder="eg. Off-White" />
+                </div>
+                
+                </div>
+              </fieldset>
+            </div>                  
+          
+            <div class="button-row d-flex mt-4">
+                      <button class="btn bg-gradient-dark ms-auto mb-0" type="button" id="btn-add-proposed-collateral-table" title="Prev">Add</button>
+                    </div>
              
                       <br/> 
                       <div  id="proposed-collateral-table" style="display: none;">
@@ -2101,38 +2172,168 @@ input[type="email"] {
 </script>
 
   <script>
-          var element = document.getElementById("relationshipId");
+          var elementBankGuaranteeDiv = document.getElementById("BankGuaranteeDiv");
+          var elementCashDepositDiv = document.getElementById("CashDepositDiv");
+          var elementCorporateGuaranteeDiv = document.getElementById("CorporateGuaranteeDiv");
+          var elementPersonalGuaranteeDiv = document.getElementById("PersonalGuaranteeDiv");
+          var elementCreditLifeInsuranceDiv = document.getElementById("CreditLifeInsuranceDiv");
+          var elementEquitableMortgageDiv = document.getElementById("EquitableMortgageDiv");
               document.addEventListener("DOMContentLoaded", function(event) { 
-              document.getElementById("choices-category26").addEventListener('change', function(e) {
+              document.getElementById("CollateralTypeSelect").addEventListener('change', function(e) {
                   //your event handling code here
-                  if(e.target.value == "Yes") {
-                      element.classList.remove("invisible");
-                      element.classList.add("visible");
-                      element.style.display = "block"
-                    }else{
-                      element.classList.add("invisible");
-                      element.classList.remove("visible");
-                      element.style.display = "none"
+                  if(e.target.value == "Bank Guarantee") {
+                      showBankGuarantee();
+                      removeCashDepositDiv();
+                      removeCorporateGuaranteeDiv();
+                      removePersonalGuaranteeDiv();
+                      removeCreditLifeInsuranceDiv();
+                      removeEquitableMortgageDiv();
+                      
+                    }else if(e.target.value == "Cash Deposit") {
+                      removeBankGuarantee();                      
+                      showCashDepositDiv();
+                      removeCorporateGuaranteeDiv();
+                      removePersonalGuaranteeDiv();
+                      removeCreditLifeInsuranceDiv();
+                      removeEquitableMortgageDiv();               
+                    
+                    }
+                    else if(e.target.value == "Corporate Guarantee" || e.target.value == "Cross Guarantees" || e.target.value == "External Guarantor") {
+                      removeBankGuarantee();
+                      removeCashDepositDiv();
+                      showCorporateGuaranteeDiv();
+                      removePersonalGuaranteeDiv();
+                      removeCreditLifeInsuranceDiv();
+                      removeEquitableMortgageDiv();                      
+                    }
+                    else if(e.target.value == "Personal Guarantee") {
+                      removeBankGuarantee();
+                      removeCashDepositDiv();
+                      removeCorporateGuaranteeDiv();
+                      showPersonalGuaranteeDiv();
+                      removeCreditLifeInsuranceDiv();
+                      removeEquitableMortgageDiv();
+                    }
+                    else if(e.target.value == "Credit Life Insurance") {
+                      removeBankGuarantee();
+                      removeCashDepositDiv();
+                      removeCorporateGuaranteeDiv();
+                      removePersonalGuaranteeDiv();
+                      showCreditLifeInsuranceDiv();
+                      removeEquitableMortgageDiv();                      
+                    }
+                    else if(e.target.value == "Equitable Mortgage" || e.target.value == "Legal Mortgage" || e.target.value == "Mortgage Debenture" ||e.target.value == "Parri Passu Mortgage" || e.target.value == "Trust Deeds (Parri Passu)") {
+                      removeBankGuarantee();
+                      removeCashDepositDiv();
+                      removeCorporateGuaranteeDiv();
+                      removePersonalGuaranteeDiv();
+                      removeCreditLifeInsuranceDiv();
+                      showEquitableMortgageDiv();                      
+                    }
+                    else{
+                      removeBankGuarantee();
+                      removeCashDepositDiv();
+                      removeCorporateGuaranteeDiv();
+                      removePersonalGuaranteeDiv();
+                      removeCreditLifeInsuranceDiv();
+                      removeEquitableMortgageDiv();                      
                   }
               })
             })
+
+            
+        function showBankGuarantee(){
+              elementBankGuaranteeDiv.classList.remove("invisible");
+              elementBankGuaranteeDiv.classList.add("visible");
+              elementBankGuaranteeDiv.style.display = "block";
+        }
+        function removeBankGuarantee(){
+              elementBankGuaranteeDiv.classList.add("invisible");
+              elementBankGuaranteeDiv.classList.remove("visible");
+              elementBankGuaranteeDiv.style.display = "none";
+        }
+
+        function showCashDepositDiv(){
+              elementCashDepositDiv.classList.remove("invisible");
+              elementCashDepositDiv.classList.add("visible");
+              elementCashDepositDiv.style.display = "block";
+        }
+        function removeCashDepositDiv(){
+              elementCashDepositDiv.classList.add("invisible");
+              elementCashDepositDiv.classList.remove("visible");
+              elementCashDepositDiv.style.display = "none";
+        }
+
+        function showCorporateGuaranteeDiv(){
+              elementCorporateGuaranteeDiv.classList.remove("invisible");
+              elementCorporateGuaranteeDiv.classList.add("visible");
+              elementCorporateGuaranteeDiv.style.display = "block";
+        }
+        function removeCorporateGuaranteeDiv(){
+              elementCorporateGuaranteeDiv.classList.add("invisible");
+              elementCorporateGuaranteeDiv.classList.remove("visible");
+              elementCorporateGuaranteeDiv.style.display = "none";
+        }
+
+        function showPersonalGuaranteeDiv(){
+              elementPersonalGuaranteeDiv.classList.remove("invisible");
+              elementPersonalGuaranteeDiv.classList.add("visible");
+              elementPersonalGuaranteeDiv.style.display = "block";
+        }
+        function removePersonalGuaranteeDiv(){
+              elementPersonalGuaranteeDiv.classList.add("invisible");
+              elementPersonalGuaranteeDiv.classList.remove("visible");
+              elementPersonalGuaranteeDiv.style.display = "none";
+        }
+
+        function showCreditLifeInsuranceDiv(){
+              elementCreditLifeInsuranceDiv.classList.remove("invisible");
+              elementCreditLifeInsuranceDiv.classList.add("visible");
+              elementCreditLifeInsuranceDiv.style.display = "block";
+        }
+        function removeCreditLifeInsuranceDiv(){
+              elementCreditLifeInsuranceDiv.classList.add("invisible");
+              elementCreditLifeInsuranceDiv.classList.remove("visible");
+              elementCreditLifeInsuranceDiv.style.display = "none";
+        }
+
+        function showEquitableMortgageDiv(){
+              elementEquitableMortgageDiv.classList.remove("invisible");
+              elementEquitableMortgageDiv.classList.add("visible");
+              elementEquitableMortgageDiv.style.display = "block";
+        }q
+        function removeEquitableMortgageDiv(){
+              elementEquitableMortgageDiv.classList.add("invisible");
+              elementEquitableMortgageDiv.classList.remove("visible");
+              elementEquitableMortgageDiv.style.display = "none";
+        }
   </script>
   <script>
     var elementfirstTimeRequest = document.getElementById("firstTimeRequest");
+    var elementfirstTimeRequest2 = document.getElementById("firstTimeRequest2");
       document.addEventListener("DOMContentLoaded", function(event) { 
       document.getElementById("firstTimeRequestSelect").addEventListener('change', function(e) {
         //your event handling code here
-        if(e.target.value == "Yes") {
+        if(e.target.value == "No") {
           elementfirstTimeRequest.classList.remove("invisible");
           elementfirstTimeRequest.classList.add("visible");
           elementfirstTimeRequest.style.display = "block"
+
+          elementfirstTimeRequest2.classList.remove("invisible");
+          elementfirstTimeRequest2.classList.add("visible");
+          elementfirstTimeRequest2.style.display = "block"
         }else{
           elementfirstTimeRequest.classList.add("invisible");
           elementfirstTimeRequest.classList.remove("visible");
           elementfirstTimeRequest.style.display = "none"
+
+          elementfirstTimeRequest2.classList.add("invisible");
+          elementfirstTimeRequest2.classList.remove("visible");
+          elementfirstTimeRequest2.style.display = "none"
         }
       })
     })
+
   </script>
   <script>
     var elementReceiveHelp = document.getElementById("customerReceiveHelp");
